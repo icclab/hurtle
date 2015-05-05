@@ -6,13 +6,15 @@
 
 # hurtle?
 
-```
+
 Q: Why is it called Hurtle?
-A: Cos we like turtles
+
+> A: Cos we like [turtles and recursion](https://en.wikipedia.org/wiki/Turtles_all_the_way_down)
 
 Q: What is your motto?
-A: "Confusing name, simple orchestration"
-```
+
+> A: "Confusing name, simple orchestration"
+
 
 # Why hurtle?
 
