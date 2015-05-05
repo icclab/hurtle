@@ -53,6 +53,7 @@ The easiest way to understand how hurtle works is through how its life cycle of 
 
 <div align="center">
 <img src="https://www.dropbox.com/s/fojvhf728swsfqk/hurtle-lifecycle.png?dl=1" alt="Hurtle Text" title="Hurtle">
+</div>
 
  1. **Design**: where the topology and dependencies of each component is specified. The model here typically takes the form of a graph.
  2. **Implementation**: ***TODO***
