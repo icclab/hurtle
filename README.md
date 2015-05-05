@@ -82,6 +82,21 @@ The easiest way to understand how hurtle works is through how its life cycle of 
  - Leverages Open Cloud Standards (OCCI, OpenStack)
 
 
+# Getting Started
+### Developer setup with devstack
+
+1. ```curl https://get.hurtle.io | bash```
+2. ???
+3. Profit
+
+### Installing Hurtle on OpenStack
+
+Please see the [installation guide](./docs/installation_guide.md) for more details.
+
+## Building
+
+**TODO**
+
 # Roadmap
 Hurtling along soon:
 
@@ -95,8 +110,7 @@ Hurtling along soon:
  - User interface to visualise resource and services relationships
  - Additional external service endpoint protocol support
 
-
-## Community
+# Community
 
 Community discussion about SmartDataCenter happens in one main place:
 
@@ -107,22 +121,6 @@ Community discussion about SmartDataCenter happens in one main place:
 
 You can also follow [@hurtle_it](https://twitter.com/hurtle_it) on
 Twitter for updates.
-
-
-## Getting Started
-### Developer setup with devstack
-
-1. ```curl https://get.hurtle.io | bash```
-2. ???
-3. Profit
-
-### Installing Hurtle on OpenStack
-
-Please see the [installation guide](./docs/installation_guide.md) for more details.
-
-## Building
-
-Good Luck...
 
 ## Contributing
 
