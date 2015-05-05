@@ -86,9 +86,9 @@ Hurtling along soon:
 
 Community discussion about SmartDataCenter happens in one main place:
 
-* The *hurtle-discuss* mailing list. Once you [subscribe to the list](#TODO: LINK),
-  you can send mail to the list address: #TODO: adress.
-  The mailing list archives are also [available on the web](#TODO: LINK).
+* The *hurtle-discuss* mailing list. Once you [subscribe to the list]( https://mailman.engineering.zhaw.ch/mailman/listinfo/icclab-hurtle),
+  you can send mail to the list address: icclab-hurtle-request@dornbirn.zhaw.ch
+  The mailing list archives are also [available on the web](https://mailman.engineering.zhaw.ch/pipermail/icclab-hurtle/).
 
 
 You can also follow [@hurtle_it](https://twitter.com/hurtle_it) on
