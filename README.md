@@ -1,7 +1,7 @@
 <div align="center">
-<img src="./hurtle-logo.png" title="Hurtle" width=250px>
+<img src="./docs/figs/hurtle-logo.png" title="Hurtle" width=250px>
 <br/>
-<img src="./hurtle-logo-text.png" title="Hurtle" width=250px>
+<img src="./docs/figs/hurtle-logo-text.png" title="Hurtle" width=250px>
 </div>
 
 # Hurtle?
@@ -22,35 +22,34 @@ hurtle lets you:
 This is the key aim of hurtle. Hurtle can take almost any software and offer it as a service to end-users. Its functionality all revolves around this idea, so the service offered is also one that can be designed with the cloud in mind, based on the [cloud-native application research of the ICCLab]().
 
 ## Where from?
-Hurtle's origin is in the telcom world and in particular Network Function Virtualisation. Here hurtle has been used to offer services that have been to date ran directly on or embedded in hardware.
+Turtle has two sources:
+
+1. is the ICCLab's [Cloud Orchestration Initiative]()
+2. is in the telcom world and in particular Network Function Virtualisation. Here hurtle has been used to offer services that have been to date ran directly on or embedded in hardware.
 
 # Overview
-
-Hurtle  is an open-source cloud service orchestrator. Hurtle is proven: it is the software that orchestrates the [Mobile Cloud Networking Project](http://www.mobile-cloud-networking.eu/site/).
 
 This repository provides documentation for the overall Hurtle project and
 pointers to the other repositories that make up a complete Hurtle deployment.
 See the [repository list](./docs/developer-guide/repos.md).
 
-Report bugs and request features using [GitHub Issues](https://github.com/icclab/hurtle/issues). For additional resources, you can contact the maintainers directly.
+
 
 Hurtle consists of the following components:
 
-- component 1
-- component 2
-- component 3
+- [Service Manager]()
+- [Service Orchestrator]()
+- [CloudController]()
 
 For more details, see:
 
-- [Hurtle Architecture](./docs/architecture.md) for
-  overall architecture.
-- [Hurtle Reference](./docs/reference.md) for an
-  overview of each component.
+- [Hurtle's Architecture](./docs/architecture.md) for overall architecture.
+- [Hurtle Reference](./docs/reference.md) for an overview of each component.
 - The [herp derp](./docs/developer-guide/herpderp.md) for herp derp
 
 # How does hurtle work?
 
-The easiest way to understand how hurtle works is through how its life cycle of an application is managed. There are 6 key phases to understand:
+Hurtle  is an open-source cloud service orchestration framework. The easiest way to understand how hurtle works is through how its life cycle of an application is managed. There are 6 key phases to understand:
 
 <div align="center">
 <img src="https://www.dropbox.com/s/fojvhf728swsfqk/hurtle-lifecycle.png?dl=1" alt="Hurtle Text" title="Hurtle">
@@ -109,8 +108,7 @@ Hurtling along soon:
  - Additional external service endpoint protocol support
 
 # Community
-
-Community discussion about SmartDataCenter happens in one main place:
+Report bugs and request features using [GitHub Issues](https://github.com/icclab/hurtle/issues). For additional resources, you can contact the maintainers directly. Community discussion about turtle happens in one main place:
 
 * The *hurtle-discuss* mailing list. Once you [subscribe to the list]( https://mailman.engineering.zhaw.ch/mailman/listinfo/icclab-hurtle),
   you can send mail to the list address: [icclab-hurtle@dornbirn.zhaw.ch](mailto:icclab-hurtle@dornbirn.zhaw.ch)
