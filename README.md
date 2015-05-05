@@ -93,10 +93,6 @@ The easiest way to understand how hurtle works is through how its life cycle of 
 
 Please see the [installation guide](./docs/installation_guide.md) for more details.
 
-## Building
-
-**TODO**
-
 # Roadmap
 Hurtling along soon:
 
