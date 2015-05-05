@@ -25,7 +25,7 @@ This is the key aim of hurtle. Hurtle can take almost any software and offer it 
 Turtle has two sources:
 
 1. is the ICCLab's [Cloud Orchestration Initiative](http://blog.zhaw.ch/icclab/category/research-approach/themes/cloud-orchestration/)
-2. is in the telcom world and in particular Network Function Virtualisation. Here hurtle has been used to offer services that have been to date ran directly on or embedded in hardware.
+2. is in the telcom world and in particular [Network Function Virtualisation](https://en.wikipedia.org/wiki/Network_functions_virtualization). Here hurtle has been used to offer services that have been to date executed directly on or embedded in hardware.
 
 # Overview
 
@@ -120,8 +120,8 @@ Twitter for updates.
 
 ## Contributing
 
-To report bugs or request features, submit issues here on
-GitHub, [icclab/hurtle/issues](https://github.com/icclab/hurtle/issues).
+To report bugs or request features, submit issues [here on
+GitHub](https://github.com/icclab/hurtle/issues)..
 If you're contributing code, make pull requests to the appropriate
 repositories (see [the repo overview](./docs/repos.md)).
 If you're contributing something substantial, you should first contact
