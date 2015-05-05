@@ -26,10 +26,12 @@ This is the key aim of hurtle. Hurtle can take almost any software and offer it 
 
 ## Where from?
 
-Hurtle has two sources:
+Hurtle has two origins:
 
 1. is the ICCLab's [Cloud Orchestration Initiative](http://blog.zhaw.ch/icclab/category/research-approach/themes/cloud-orchestration/)
 2. is in the telcom world and in particular [Network Function Virtualisation](https://en.wikipedia.org/wiki/Network_functions_virtualization). Here hurtle has been used to offer services that have been to date executed directly on or embedded in hardware.
+
+And well, it's all powered upon another hurtle ;-)
 
 # Overview
 
