@@ -1,10 +1,11 @@
 <div align="center">
-<img src="./docs/figs/hurtle-logo.png" title="Hurtle" width=250px>
+<img src="./docs/figs/hurtle-logo.png" title="hurtle" width=250px>
 <br/>
-<img src="./docs/figs/hurtle-logo-text.png" title="Hurtle" width=250px>
+<img src="./docs/figs/hurtle-logo-text.png" title="hurtle" width=250px>
 </div>
 
-# Hurtle?
+# hurtle?
+
 ```
 Q: Why is it called Hurtle?
 A: Cos we like turtles
@@ -13,7 +14,7 @@ Q: What is your motto?
 A: "Confusing name, simple orchestration"
 ```
 
-# Why Hurtle?
+# Why hurtle?
 
 hurtle lets you:
 
@@ -22,24 +23,23 @@ hurtle lets you:
 This is the key aim of hurtle. Hurtle can take almost any software and offer it as a service to end-users. Its functionality all revolves around this idea, so the service offered is also one that can be designed with the cloud in mind, based on the [cloud-native application research of the ICCLab](http://blog.zhaw.ch/icclab/category/research-approach/themes/cloud-native-applications/).
 
 ## Where from?
-Turtle has two sources:
+
+Hurtle has two sources:
 
 1. is the ICCLab's [Cloud Orchestration Initiative](http://blog.zhaw.ch/icclab/category/research-approach/themes/cloud-orchestration/)
 2. is in the telcom world and in particular [Network Function Virtualisation](https://en.wikipedia.org/wiki/Network_functions_virtualization). Here hurtle has been used to offer services that have been to date executed directly on or embedded in hardware.
 
 # Overview
 
-This repository provides documentation for the overall Hurtle project and
-pointers to the other repositories that make up a complete Hurtle deployment.
-See the [repository list](./docs/developer-guide/repos.md).
-
-
+This repository provides documentation for hurtle and
+pointers to the other repositories that make up a complete hurtle system.
+See the [repository list](./docs/repos.md).
 
 Hurtle consists of the following components:
 
-- [Service Manager]()
-- [Service Orchestrator]()
-- [CloudController]()
+- [Service Manager](./docs/architecture.md)
+- [Service Orchestrator](./docs/architecture.md)
+- [CloudController](./docs/architecture.md)
 
 For more details, see:
 
@@ -52,7 +52,7 @@ For more details, see:
 Hurtle  is an open-source cloud service orchestration framework. The easiest way to understand how hurtle works is through how its life cycle of an application is managed. There are 6 key phases to understand:
 
 <div align="center">
-<img src="https://www.dropbox.com/s/fojvhf728swsfqk/hurtle-lifecycle.png?dl=1" alt="Hurtle Text" title="Hurtle">
+<img src="https://www.dropbox.com/s/fojvhf728swsfqk/hurtle-lifecycle.png?dl=1" alt="hurtle Text" title="hurtle">
 </div>
 
  1. **Design**: where the topology and dependencies of each component is specified. The model here typically takes the form of a graph.
@@ -80,21 +80,25 @@ Hurtle  is an open-source cloud service orchestration framework. The easiest way
    - Integration with [ICCLab's Watchtower (Cloud Incident Management)](https://github.com/icclab/watchtower-common)
  - Bill for your software and services
    - Integration with [ICCLab's Cyclops (Rating, charging & Billing)](https://icclab.github.io/cyclops/)
- - Leverages Open Cloud Standards (OCCI, OpenStack)
+ - Leverages Open Cloud Standards ([OCCI](http://www.occi-wg.org), [OpenStack](http://www.openstack.org))
 
 
 # Getting Started
-### Developer setup with devstack
+
+## Developer setup with devstack
+
+Or the quick and fast way...
 
 1. ```curl https://get.hurtle.io | bash```
 2. ???
 3. Profit
 
-### Installing Hurtle on OpenStack
+## Installing Hurtle on OpenStack
 
 Please see the [installation guide](./docs/installation_guide.md) for more details.
 
 # Roadmap
+
 Hurtling along soon:
 
  - Enhanced workload placement, dynamic policy-based
@@ -107,7 +111,8 @@ Hurtling along soon:
  - User interface to visualise resource and services relationships
  - Additional external service endpoint protocol support
 
-# Community
+# Community & Support
+
 Report bugs and request features using [GitHub Issues](https://github.com/icclab/hurtle/issues). For additional resources, you can contact the maintainers directly. Community discussion about turtle happens in one main place:
 
 * The *hurtle-discuss* mailing list. Once you [subscribe to the list]( https://mailman.engineering.zhaw.ch/mailman/listinfo/icclab-hurtle),
@@ -132,7 +137,7 @@ For urgent questions please contact the [maintainers](./docs/maintainers.md) dir
 
 Hurtle repositories follow no written Guidelines to date.
 
-## Dependencies and Related Projects
+# Dependencies and Related Projects
 
 Hurtle uses [Generic Software](http://generic-software-url.com) for XZY. This is followed by a generic sentence why and for what it uses it.
 
