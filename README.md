@@ -1,6 +1,8 @@
-->![Hurtle](./hurtle-logo.png =250x)<-
-
-->![Hurtle](./hurtle-logo-text.png =250x)<-
+<div align="center">
+<img src="./hurtle-logo.png" title="Hurtle" width=250px>
+<br/>
+<img src="./hurtle-logo-text.png" title="Hurtle" width=250px>
+</div>
 
 # Hurtle?
 ```
