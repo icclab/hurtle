@@ -7,7 +7,7 @@
 # hurtle?
 
 
-Q: Why is it called Hurtle?
+Q: Why is it Called hurtle?
 
 > A: Cos we like [turtles and recursion](https://en.wikipedia.org/wiki/Turtles_all_the_way_down)
 
@@ -20,17 +20,17 @@ Q: What is your motto?
 
 hurtle lets you:
 
-> offer your software as a service i.e. hurtle-it
+> offer your software as a service i.e. "hurtle it!"
 
-This is the key aim of hurtle. Hurtle can take almost any software and offer it as a service to end-users. 
+This is the key aim of hurtle. It can take almost any software and offer it as a service to end-users. 
 
-> Hurtle enables service and infrastructure orchestration to easily compose, deploy, provision and manage distributed systems
+> hurtle enables service and infrastructure orchestration to easily compose, deploy, provision and manage distributed systems
 
 Its functionality all revolves around this idea, so the service offered is also one that can be designed with the cloud in mind, based on the [cloud-native application research of the ICCLab](http://blog.zhaw.ch/icclab/category/research-approach/themes/cloud-native-applications/).
 
-## Where from?
+## Where From?
 
-Hurtle has two origins:
+hurtle has two origins:
 
 1. is the ICCLab's [Cloud Orchestration Initiative](http://blog.zhaw.ch/icclab/category/research-approach/themes/cloud-orchestration/)
 2. is in the telcom world and in particular [Network Function Virtualisation](https://en.wikipedia.org/wiki/Network_functions_virtualization). Here hurtle has been used to offer services that have been to date executed directly on or embedded in hardware.
@@ -43,7 +43,7 @@ This repository provides documentation for hurtle and
 pointers to the other repositories that make up a complete hurtle system.
 See the [repository list](./docs/repos.md).
 
-Hurtle consists of the following components:
+hurtle consists of the following components:
 
 - [Service Manager](./docs/architecture.md)
 - [Service Orchestrator](./docs/architecture.md)
@@ -51,8 +51,8 @@ Hurtle consists of the following components:
 
 For more details, see:
 
-- [Hurtle's Architecture](./docs/architecture.md) for overall architecture.
-- [Hurtle Reference](./docs/reference.md) for an overview of each component.
+- [hurtle's Architecture](./docs/architecture.md) for overall architecture.
+- [hurtle Reference](./docs/reference.md) for an overview of each component.
 - The [herp derp](./docs/herpderp.md) for herp derp
 
 # Features
@@ -77,7 +77,7 @@ For more details, see:
 
 # How Does hurtle Work?
 
-Hurtle  is an open-source cloud service orchestration framework. The easiest way to understand how hurtle works is through how its life cycle of an application is managed. There are 6 key phases to understand:
+The easiest way to understand how hurtle works is through how its life cycle of an application is managed. There are 6 key phases to understand:
 
 <div align="center">
 <img src="https://www.dropbox.com/s/fojvhf728swsfqk/hurtle-lifecycle.png?dl=1" alt="hurtle Text" title="hurtle">
@@ -96,7 +96,7 @@ Hurtle  is an open-source cloud service orchestration framework. The easiest way
 
 Or the quick and fast way...
 
-1. ```curl https://get.hurtle.io | bash```
+1. ```curl https://get.hurtle.it | bash```
 2. ???
 3. Profit
 
@@ -163,6 +163,6 @@ The principles that guide hurtle are the key basis of [service oriented architec
 
 ## License
 
-Hurtle is licensed under the
+hurtle is licensed under the
 [Apache License version 2.0](https://www.apache.org/licenses/LICENSE-2.0).
 See the file LICENSE.
