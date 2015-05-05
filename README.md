@@ -67,7 +67,7 @@ For more details, see:
    - Integration with [ICCLab's Cyclops (Rating, charging & Billing)](https://icclab.github.io/cyclops/)
  - Leverages Open Cloud Standards ([OCCI](http://www.occi-wg.org), [OpenStack](http://www.openstack.org))
 
-# How does hurtle work?
+# How Does hurtle Work?
 
 Hurtle  is an open-source cloud service orchestration framework. The easiest way to understand how hurtle works is through how its life cycle of an application is managed. There are 6 key phases to understand:
 
@@ -100,6 +100,7 @@ Please see the [installation guide](./docs/installation_guide.md) for more detai
 
 Hurtling along soon:
 
+ - More examples including the [ cloud native Zurmo implementation from ICCLab](https://github.com/icclab/cna-seed-project)
  - Enhanced workload placement, dynamic policy-based
  - Support for docker-registry deployed containers
  - Runtime updates to service and resource topologies
