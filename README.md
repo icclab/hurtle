@@ -55,11 +55,11 @@ The easiest way to understand how hurtle works is through how its life cycle of 
 <img src="https://www.dropbox.com/s/fojvhf728swsfqk/hurtle-lifecycle.png?dl=1" alt="Hurtle Text" title="Hurtle">
 
  1. **Design**: where the topology and dependencies of each component is specified. The model here typically takes the form of a graph.
- * **Implementation**: ***TODO***
- * **Deploy**: the complete fleet of resources and services are deployed according to a plan. At this stage they are not configured.
- * **Provision**: each resource and service is correctly provisioned and configured. This must be done such that one service or resource is not without a required operational dependency (e.g. a php application without its database).
- * **Runtime**: once all components of an orchestration are running the next key element is that they are managed. To manage means at the most basic level to monitor the components. Based on metrics extracted, performance indicators can be formulated using logic-based rules. These when notified where an indicator’s threshold is breached, an Orchestrator could take a remedial action ensuring reliability.
- * **Disposal**: Where a service is deployed through cloud services (e.g. infrastructure; VMs) it may be required to destroy the complete orchestration to redeploy a new version or indeed part of the orchestration destroyed.
+ 2. **Implementation**: ***TODO***
+ 3. **Deploy**: the complete fleet of resources and services are deployed according to a plan. At this stage they are not configured.
+ 4. **Provision**: each resource and service is correctly provisioned and configured. This must be done such that one service or resource is not without a required operational dependency (e.g. a php application without its database).
+ 5. **Runtime**: once all components of an orchestration are running the next key element is that they are managed. To manage means at the most basic level to monitor the components. Based on metrics extracted, performance indicators can be formulated using logic-based rules. These when notified where an indicator’s threshold is breached, an Orchestrator could take a remedial action ensuring reliability.
+ 6. **Disposal**: Where a service is deployed through cloud services (e.g. infrastructure; VMs) it may be required to destroy the complete orchestration to redeploy a new version or indeed part of the orchestration destroyed.
 
 # Features
 
@@ -132,8 +132,11 @@ For urgent questions please contact the [maintainers](./docs/maintainers.md) dir
 
 Hurtle repositories follow no written Guidelines to date.
 
+## Dependencies and Related Projects
 
-## Design Principles
+Hurtle uses [Generic Software](http://generic-software-url.com) for XZY. This is followed by a generic sentence why and for what it uses it.
+
+# Design Principles
 
 The principles that guide hurtle are the key basis of [service oriented architecture](https://en.wikipedia.org/wiki/Service-oriented_architecture).
 
@@ -144,12 +147,6 @@ The principles that guide hurtle are the key basis of [service oriented architec
  * Reusable: Whether immediate reuse opportunities exist, services are designed to support potential reuse.
  * **Stateless**: Services should be designed to maximise statelessness even if that means deferring state management elsewhere.
  * **Discoverable**: Services should allow their descriptions to be discovered and understood by (possibly) humans and service requestors that may be able to make use of their logic.
-
-
-## Dependencies and Related Projects
-
-Hurtle uses [Generic Software](http://generic-software-url.com) for XZY. This is followed by a generic sentence why and for what it uses it.
-
 
 ## License
 
