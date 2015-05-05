@@ -91,7 +91,7 @@ Community discussion about SmartDataCenter happens in one main place:
   The mailing list archives are also [available on the web](#TODO: LINK).
 
 
-You can also follow [@hurtle_orch](https://twitter.com/hurtle_orch) on
+You can also follow [@hurtle_it](https://twitter.com/hurtle_it) on
 Twitter for updates.
 
 
