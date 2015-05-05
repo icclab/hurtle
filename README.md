@@ -47,21 +47,6 @@ For more details, see:
 - [Hurtle Reference](./docs/reference.md) for an overview of each component.
 - The [herp derp](./docs/herpderp.md) for herp derp
 
-# How does hurtle work?
-
-Hurtle  is an open-source cloud service orchestration framework. The easiest way to understand how hurtle works is through how its life cycle of an application is managed. There are 6 key phases to understand:
-
-<div align="center">
-<img src="https://www.dropbox.com/s/fojvhf728swsfqk/hurtle-lifecycle.png?dl=1" alt="hurtle Text" title="hurtle">
-</div>
-
- 1. **Design**: where the topology and dependencies of each component is specified. The model here typically takes the form of a graph.
- 2. **Implementation**: ***TODO***
- 3. **Deploy**: the complete fleet of resources and services are deployed according to a plan. At this stage they are not configured.
- 4. **Provision**: each resource and service is correctly provisioned and configured. This must be done such that one service or resource is not without a required operational dependency (e.g. a php application without its database).
- 5. **Runtime**: once all components of an orchestration are running the next key element is that they are managed. To manage means at the most basic level to monitor the components. Based on metrics extracted, performance indicators can be formulated using logic-based rules. These when notified where an indicator’s threshold is breached, an Orchestrator could take a remedial action ensuring reliability.
- 6. **Disposal**: Where a service is deployed through cloud services (e.g. infrastructure; VMs) it may be required to destroy the complete orchestration to redeploy a new version or indeed part of the orchestration destroyed.
-
 # Features
 
  - Complete orchestration of your software
@@ -82,6 +67,20 @@ Hurtle  is an open-source cloud service orchestration framework. The easiest way
    - Integration with [ICCLab's Cyclops (Rating, charging & Billing)](https://icclab.github.io/cyclops/)
  - Leverages Open Cloud Standards ([OCCI](http://www.occi-wg.org), [OpenStack](http://www.openstack.org))
 
+# How does hurtle work?
+
+Hurtle  is an open-source cloud service orchestration framework. The easiest way to understand how hurtle works is through how its life cycle of an application is managed. There are 6 key phases to understand:
+
+<div align="center">
+<img src="https://www.dropbox.com/s/fojvhf728swsfqk/hurtle-lifecycle.png?dl=1" alt="hurtle Text" title="hurtle">
+</div>
+
+ 1. **Design**: where the topology and dependencies of each component is specified. The model here typically takes the form of a graph.
+ 2. **Implementation**: ***TODO***
+ 3. **Deploy**: the complete fleet of resources and services are deployed according to a plan. At this stage they are not configured.
+ 4. **Provision**: each resource and service is correctly provisioned and configured. This must be done such that one service or resource is not without a required operational dependency (e.g. a php application without its database).
+ 5. **Runtime**: once all components of an orchestration are running the next key element is that they are managed. To manage means at the most basic level to monitor the components. Based on metrics extracted, performance indicators can be formulated using logic-based rules. These when notified where an indicator’s threshold is breached, an Orchestrator could take a remedial action ensuring reliability.
+ 6. **Disposal**: Where a service is deployed through cloud services (e.g. infrastructure; VMs) it may be required to destroy the complete orchestration to redeploy a new version or indeed part of the orchestration destroyed.
 
 # Getting Started
 
