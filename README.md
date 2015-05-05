@@ -22,7 +22,11 @@ hurtle lets you:
 
 > offer your software as a service i.e. hurtle-it
 
-This is the key aim of hurtle. Hurtle can take almost any software and offer it as a service to end-users. Its functionality all revolves around this idea, so the service offered is also one that can be designed with the cloud in mind, based on the [cloud-native application research of the ICCLab](http://blog.zhaw.ch/icclab/category/research-approach/themes/cloud-native-applications/).
+This is the key aim of hurtle. Hurtle can take almost any software and offer it as a service to end-users. 
+
+> Hurtle enables service and infrastructure orchestration to easily compose, deploy, provision and manage distributed systems
+
+Its functionality all revolves around this idea, so the service offered is also one that can be designed with the cloud in mind, based on the [cloud-native application research of the ICCLab](http://blog.zhaw.ch/icclab/category/research-approach/themes/cloud-native-applications/).
 
 ## Where from?
 
