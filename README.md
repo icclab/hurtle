@@ -1,6 +1,6 @@
 <div align="center">
-	<img src="https://www.dropbox.com/s/b0xr4dgjk0g274y/hurtle-logo.png?dl=1" alt="Watchtower" title="Watchtower">
-	<img src="https://www.dropbox.com/s/5snsos1ioryyern/hurtle-logo-text.png?dl=1" alt="Watchtower" title="Watchtower">
+	<img src="https://www.dropbox.com/s/b0xr4dgjk0g274y/hurtle-logo.png?dl=1" alt="Hurtle Logo" title="Hurtle">
+	<img src="https://www.dropbox.com/s/5snsos1ioryyern/hurtle-logo-text.png?dl=1" alt="Hurtle Text" title="Hurtle">
 </div>
 
 # Hurtle?
@@ -46,6 +46,20 @@ For more details, see:
 - [Hurtle Reference](./docs/reference.md) for an
   overview of each component.
 - The [herp derp](./docs/developer-guide/herpderp.md) for herp derp
+
+# How does hurtle work?
+
+The easiest way to understand how hurtle works is through how its life cycle of an application is managed. There are 6 key phases to understand:
+
+<div align="center">
+<img src="https://www.dropbox.com/s/fojvhf728swsfqk/hurtle-lifecycle.png?dl=1" alt="Hurtle Text" title="Hurtle">
+
+ 1. **Design**: where the topology and dependencies of each component is specified. The model here typically takes the form of a graph.
+ * **Implementation**: ***TODO***
+ * **Deploy**: the complete fleet of resources and services are deployed according to a plan. At this stage they are not configured.
+ * **Provision**: each resource and service is correctly provisioned and configured. This must be done such that one service or resource is not without a required operational dependency (e.g. a php application without its database).
+ * **Runtime**: once all components of an orchestration are running the next key element is that they are managed. To manage means at the most basic level to monitor the components. Based on metrics extracted, performance indicators can be formulated using logic-based rules. These when notified where an indicator’s threshold is breached, an Orchestrator could take a remedial action ensuring reliability.
+ * **Disposal**: Where a service is deployed through cloud services (e.g. infrastructure; VMs) it may be required to destroy the complete orchestration to redeploy a new version or indeed part of the orchestration destroyed.
 
 # Features
 
