@@ -1,6 +1,6 @@
 <div align="center">
-	<img src="https://www.dropbox.com/s/b0xr4dgjk0g274y/hurtle-logo.png?dl=1" alt="Watchtower" title="Watchtower">
-	<img src="https://www.dropbox.com/s/5snsos1ioryyern/hurtle-logo-text.png?dl=1" alt="Watchtower" title="Watchtower">
+	<img src="https://www.dropbox.com/s/b0xr4dgjk0g274y/hurtle-logo.png?dl=1" alt="Watchtower" title="Watchtower" width="200px">
+	<img src="https://www.dropbox.com/s/5snsos1ioryyern/hurtle-logo-text.png?dl=1" alt="Watchtower" title="Watchtower" width="200px">
 </div>
 
 # Hurtle?
