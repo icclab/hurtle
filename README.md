@@ -120,8 +120,8 @@ Report bugs and request features using [GitHub Issues](https://github.com/icclab
   The mailing list archives are also [available on the web](https://mailman.engineering.zhaw.ch/pipermail/icclab-hurtle/).
 
 
-You can also follow [@hurtle_it](https://twitter.com/hurtle_it) on
-Twitter for updates.
+You can follow [@hurtle_it](https://twitter.com/hurtle_it) on
+Twitter for updates and of course [on the ICCLab blog](http://blog.zhaw.ch/icclab/tag/hurtle/)
 
 ## Contributing
 
