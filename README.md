@@ -1,7 +1,6 @@
-<div align="center">
-	<img src="https://www.dropbox.com/s/b0xr4dgjk0g274y/hurtle-logo.png?dl=1" alt="Hurtle Logo" title="Hurtle" width="200px>
-	<img src="https://www.dropbox.com/s/5snsos1ioryyern/hurtle-logo-text.png?dl=1" alt="Hurtle Text" title="Hurtle" width="200px>
-</div>
+->![Hurtle](./hurtle-logo.png =250x)<-
+
+->![Hurtle](./hurtle-logo-text.png =250x)<-
 
 # Hurtle?
 ```
