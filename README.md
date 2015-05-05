@@ -10,7 +10,7 @@ Q: Why is it called Hurtle?
 A: Cos we like turtles
 
 Q: What is your motto?
-A: "Confusing name, simple orchestration"
+A: "Confusing name, simple orchestration"
 ```
 
 # Why Hurtle?
@@ -19,12 +19,12 @@ hurtle lets you:
 
 > offer your software as a service i.e. hurtle-it
 
-This is the key aim of hurtle. Hurtle can take almost any software and offer it as a service to end-users. Its functionality all revolves around this idea, so the service offered is also one that can be designed with the cloud in mind, based on the [cloud-native application research of the ICCLab]().
+This is the key aim of hurtle. Hurtle can take almost any software and offer it as a service to end-users. Its functionality all revolves around this idea, so the service offered is also one that can be designed with the cloud in mind, based on the [cloud-native application research of the ICCLab](http://blog.zhaw.ch/icclab/category/research-approach/themes/cloud-native-applications/).
 
 ## Where from?
 Turtle has two sources:
 
-1. is the ICCLab's [Cloud Orchestration Initiative]()
+1. is the ICCLab's [Cloud Orchestration Initiative](http://blog.zhaw.ch/icclab/category/research-approach/themes/cloud-orchestration/)
 2. is in the telcom world and in particular Network Function Virtualisation. Here hurtle has been used to offer services that have been to date ran directly on or embedded in hardware.
 
 # Overview
@@ -45,7 +45,7 @@ For more details, see:
 
 - [Hurtle's Architecture](./docs/architecture.md) for overall architecture.
 - [Hurtle Reference](./docs/reference.md) for an overview of each component.
-- The [herp derp](./docs/developer-guide/herpderp.md) for herp derp
+- The [herp derp](./docs/herpderp.md) for herp derp
 
 # How does hurtle work?
 
