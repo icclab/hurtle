@@ -96,9 +96,9 @@ Such a service looks like the example below (note that some methods have been cu
 	        else:
 	            return 'Unknown', 'N/A', ''
 	            
-### Service Template Graph: JSON Manifest
+### Upcoming: Service Template Graph: JSON Manifest
 
-An important feature of Hurtle is to be able to compose services, thus describing which services are required by another service is critical to a non-atomic service. This is realized by a Service Manifest as a JSON file in our default implementation. Example below:
+This new easy to use feature will be available in the next release. An important feature of Hurtle is to be able to compose services, thus describing which services are required by another service is critical to a non-atomic service. This is realized by a Service Manifest as a JSON file in our default implementation. Example below:
 
 	{
 	    "service_type": "http://schemas.mobile-cloud-networking.eu/occi/sm#e2e",
@@ -139,6 +139,7 @@ An important feature of Hurtle is to be able to compose services, thus describin
 	        {
 	            "http://schemas.mobile-cloud-networking.eu/occi/service#cc": {
 	                "uri": "file:///root/my/bundle/data/itg.yaml"
+	                "location": "RegionOne"
 	            }
 	        }
 	    ]
@@ -167,7 +168,12 @@ Running your new service requires you to launch your service manager (through th
 
 	python ./example_service_manager.py -c etc/sm.cfg
 
-By default it runs on port 8888 and acceps all the curl commands described here.**TODO: Link**
+By default it runs on port 8888 and accept all the curl commands described here.**TODO: Link**
+
+### Create a Service Instance
+### Retrieve a Service Instance
+### Delete a Service Instance
+
 
 # Examples
 

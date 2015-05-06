@@ -1,5 +1,7 @@
 # Hurtle Technical Implementation
 
+**TODO: Add image**
+
 Based on the architecture we designed, the implementation uses the following technologies shown below to support the lifecycle of a Hurtle service.
 
 ## Cloud Standard: OCCI
