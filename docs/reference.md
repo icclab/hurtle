@@ -13,4 +13,4 @@ Many of the components that make up Hurtle have their own repository and documen
 | ---- | ---- | ----------- |
 | Sample SO | [hurtle_sample_so](https://github.com/icclab/hurtle_sample_so) | Example of a Service Orchestrator, the piece that oversees the orchestration of a service instance |
 | CMS Service (Wordpress) | Repo coming soon! | Example of a Wordpress software... as a service |
-| CRM Service (Zurmo) | Repo coming soon! | Example of a CRM software... as a service |
+| CRM Service (Zurmo) | [hurtle_cna_crm](https://github.com/icclab/hurtle_cna_crm) | Example of a CRM software... as a service |
