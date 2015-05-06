@@ -21,17 +21,36 @@ All the components are represented in the diagram below.
 
 <img src="./figs/hurtle_components.png" alt="hurtle_components" width=500px>
 
-The following three sections explain the essential parts of the diagram in more details:
+Hurtle's fundamental idea is that what is offered to the end user is a *service*. 
+
+This service can be then accessed by the end user, allowing him to create a *service instance* of their own, entirely owned and controlled by him. The service that the end user instantiates can be one that is made up of other services, a *composed service*, or not, an *atomic service*.
+
+The services themselves are powered and underpinned by *resources*, which can be *virtual* or *physical*. Examples of virtual resources include virtual machines, virtual hard drives and virtual networks. Examples of physical resources include a physical server, a network switch and a storage server.
+
+In order to get a service instance, the end user requests it through the *service manager*. When the service manager receives the request its key function is to create a *service orchestrator* that is responsible for the creation of the resources and software supporting the creation of the service instance following the Hurtle service lifecycle. The service manager and service orchestrator uses the *Cloud Controller* as an abstraction layer to access various services and resources to found the service instance.
+
+The following three sections explain the essential parts of the architecture, service manager, service orchestrator and cloud controller, in more details:
 
 ### Service Manager
 
 The SM provides an external interface to the EEU and is responsible for managing service orchestrators. It takes part in the Design, Deployment, Provisioning, Operation & Runtime Management and Disposal steps in the Technical Lifecycle of the Service.
 
+The SM’s programmatic interface (northbound interface, NBI) is designed so it can provide either a CLI and/or a UI. Through the NBI, the SM gives the EEU or SO, both classed as tenant, capabilities to create, list, detail, update and delete (EEU) tenant service instance(s). 
+
+The “Service Catalogue” contains a list of the available services offered by the provider. 
+
+The “Service Repository” is the component that provides the functionality to access the “Service Catalogue”. 
+
+
 ### Service Orchestrator
-The Service Orchestrator (SO) is a key element in Hurtle: it oversees the end-to-end orchestration of a service instance. It is responsible for managing the Service Instance and in particular its components (SIC), once it is created and running. Each Service Instance is managed by a SO. It is therefore a domain specific component as it has all the business specific logic encoded within it. This is further described in Figure 10. MCN entities, identifying the deliverables where they are presented The SO plays a large role in the 'Runtime & Management' step of the MCN Service Lifecycle. In particular, it is responsible of SIC instantiation and configuration, triggering of scaling and migration of SICs according to data collected e.g. from Support Services like MaaS (see sec. 4.3.4) and disposal of SICs. 
+A Service Orchestrator (SO) is also a key element in Hurtle: it oversees the end-to-end orchestration of a service instance. It is responsible for managing the Service Instance and in particular its components (SIC), once it is created and running.
+
+Each Service Instance is managed by a SO. It is therefore a domain specific component as it has all the service specific logic encoded within it. 
+The SO plays a large role in the 'Runtime & Management' step of the Service Lifecycle. In particular, it is responsible for the triggering of scaling and migration of SICs according to data collected e.g. from the Monasca notification service.
 
 ### Cloud Controller
 
+The Cloud Controller is a logical entity consisting of multiple modules that abstract underlying technology choices. It is used by both Service Managers and Service Orchestrators to issue requests to the underlying infrastructure.
 
-### Service Instance
+It provides extensible interfaces and currently is used to support multiple technologies such as OpenShift and OpenStack. 
 
