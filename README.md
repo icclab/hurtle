@@ -92,13 +92,25 @@ The easiest way to understand how hurtle works is through how its life cycle of 
 
 # Getting Started
 
-## Developer setup with devstack
+## Quickstart
+Note: The Vagrant boxes are quiet demanding (6GB and 2GB of RAM) on your System.
 
-Or the quick and fast way...
+The Vagrant boxes give you a complete environment to play around: OpenStack, OpenShift and the hurtle-sample-so are preinstalled.
 
-1. ```curl https://get.hurtle.it | bash```
-2. ???
-3. Profit
+
+```
+# Clone this repo
+git clone https://github.com/icclab/hurtle.git
+
+# Spin up the Vagrant boxes
+cd vagrant 
+vagrant up
+
+# Grab a coffee, this could take a while (~3GB download)
+
+# Once the machines are booted up, check out the hurtle-sample-so README file
+
+```
 
 ## Installing Hurtle on OpenStack
 

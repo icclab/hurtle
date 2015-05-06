@@ -1,0 +1,24 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+VAGRANTFILE_API_VERSION = "2"
+
+Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
+  config.vm.synced_folder ".", "/vagrant", disabled: true
+
+
+  config.vm.define "hurtle-openstack" do |node|
+    node.vm.box = "merne/hurtle-openstack"
+    node.vm.provider "virtualbox" do |vb|
+      vb.customize ["modifyvm", :id, "--memory", "6144", "--cpus", "4"]
+    end
+    node.vm.network "private_network", ip: "192.168.72.128"
+  end
+  config.vm.define "hurtle-openshift" do |node|
+    node.vm.box = "merne/hurtle-openshift"
+    node.vm.provider "virtualbox" do |vb|
+      vb.customize ["modifyvm", :id, "--memory", "2048", "--cpus", "4"]
+    end
+    node.vm.network "private_network", ip: "192.168.72.64"
+  end
+end
