@@ -67,7 +67,7 @@ For more details, see:
    - External services it needs
  - Multi-dc/multi-region support
    - including inter-DC connectivity
- - Easy implementation of your service API
+ - Easy implementation of your service API - See [how to write your Hurtle Service](./docs/how_to_write_a_hurtle_service.md)
  - Guided implementation of your service instance manager
    - Many languages supported including Python, Java, Perl, PHP
    - Demo applications available
