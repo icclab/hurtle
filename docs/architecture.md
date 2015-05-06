@@ -1,5 +1,18 @@
 # Hurtle Conceptual Architecture
 
+## Design Principles
+
+The principles that guide hurtle are the key basis of [service oriented architecture](https://en.wikipedia.org/wiki/Service-oriented_architecture).
+
+ * **Autonomous**: The logic governed by a service resides within an explicit boundary. The service has control within this boundary, and is not tightly coupled to execute.
+ * **Share a formal contract**: In order for services to interact, they need not share anything but a collection of published metadata that describes each service and defines the terms of information exchange.
+ * **Loosely coupled**: Dependencies between the underlying logic of a service and its consumers are limited to conformance of the service contract. Services abstract underlying logic, which is invisible to the outside world, beyond what is expressed in the service contract metadata.
+ * **Composable**: Services may compose others, allowing logic to be represented at different levels of granularity. This allows for reusability and the creation of service abstraction layers and/or platforms.
+ * Reusable: Whether immediate reuse opportunities exist, services are designed to support potential reuse.
+ * **Stateless**: Services should be designed to maximise statelessness even if that means deferring state management elsewhere.
+ * **Discoverable**: Services should allow their descriptions to be discovered and understood by (possibly) humans and service requestors that may be able to make use of their logic.
+
+
 Hurtle follows the principles of services oriented architectures and its architecture is divided into a number of services. 
 
 Before delving in the components themselves, it is important to understand the different actors involved in the writing and usage of a hurtle-managed service as well as the lifecycle of a hurtle service described in the main README.
