@@ -77,3 +77,6 @@ The Cloud Controller is a logical entity consisting of multiple modules that abs
 
 It provides extensible interfaces and currently is used to support multiple technologies such as OpenShift and OpenStack. 
 
+# How Each Component Interacts With Each Other
+
+You can [see these interactions in this UML sequence diagram](./figs/hurtle-seq.png).
