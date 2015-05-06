@@ -158,10 +158,6 @@ For urgent questions please contact the [maintainers](./docs/maintainers.md) dir
 
 Hurtle repositories follow no written Guidelines to date.
 
-# Dependencies and Related Projects
-
-Hurtle uses [Generic Software](http://generic-software-url.com) for XZY. This is followed by a generic sentence why and for what it uses it.
-
 # Design Principles
 
 The principles that guide hurtle are the key basis of [service oriented architecture](https://en.wikipedia.org/wiki/Service-oriented_architecture).
