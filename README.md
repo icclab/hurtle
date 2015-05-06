@@ -88,12 +88,14 @@ The easiest way to understand how hurtle works is through how its life cycle of 
 <img src="./docs/figs/hurtle_lifecycle_2.png" alt="hurtle Text" title="hurtle">
 </div>
 
- 1. **Design**: where the topology and dependencies of each component is specified. The model here typically takes the form of a graph.
+ 1. **Design**: where the topology and dependencies of each service component is specified. The model here typically takes the form of a graph.
  2. **Implementation**: This is where the developer(s) needs to implement the actual software that will be provided as a service through hurtle
- 3. **Deploy**: the complete fleet of resources and services are deployed according to a plan. At this stage they are not configured.
- 4. **Provision**: each resource and service is correctly provisioned and configured. This must be done such that one service or resource is not without a required operational dependency (e.g. a php application without its database).
- 5. **Runtime**: once all components of an orchestration are running the next key element is that they are managed. To manage means at the most basic level to monitor the components. Based on metrics extracted, performance indicators can be formulated using logic-based rules. These when notified where an indicator’s threshold is breached, an Orchestrator could take a remedial action ensuring reliability.
- 6. **Disposal**: Where a service is deployed through cloud services (e.g. infrastructure; VMs) it may be required to destroy the complete orchestration to redeploy a new version or indeed part of the orchestration destroyed.
+ 3. **Deploy**: the complete fleet of resources and services are deployed according to a plan executed by hurtle. At this stage they are not configured.
+ 4. **Provision**: each resource and service is correctly provisioned and configured by hurtle. This must be done such that one service or resource is not without a required operational dependency (e.g. a php application without its database).
+ 5. **Runtime**: once all components of an hurtle orchestration are running, the next key element is that they are managed. To manage means at the most basic level to monitor the components. Based on metrics extracted, performance indicators can be formulated using logic-based rules. These when notified where an indicator’s threshold is breached, an Orchestrator could take a remedial action ensuring reliability.
+ 6. **Disposal**: Where a hurtle service instance is destroyed.
+ 
+More details are in the [logical](./docs/architecture.md) and [technical](./docs/hurtle_technical_implementation.md) architecture documents.
 
 # Getting Started
 
