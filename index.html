@@ -29,9 +29,9 @@
       </header>
       <section>
         <div align="center">
-<img src="./docs/figs/hurtle-logo.png" title="hurtle" width="250px">
+<img src="https://raw.githubusercontent.com/icclab/hurtle/master/docs/figs/hurtle-logo.png" title="hurtle" width="250px">
 <br>
-<img src="./docs/figs/hurtle-logo-text.png" title="hurtle" width="250px">
+<img src="https://raw.githubusercontent.com/icclab/hurtle/master/docs/figs/hurtle-logo-text.png" title="hurtle" width="250px">
 </div>
 
 <h1>
@@ -93,9 +93,15 @@ See the <a href="./docs/reference.md">repository list</a>.</p>
 <p>hurtle consists of the following components:</p>
 
 <ul>
-<li><a href="./docs/architecture.md">Service Manager</a></li>
-<li><a href="./docs/architecture.md">Service Orchestrator</a></li>
-<li><a href="./docs/architecture.md">CloudController</a></li>
+<li>
+<a href="./docs/architecture.md">Service Manager (SM)</a>: receives requests for new tenant service instances -&gt; <a href="https://github.com/icclab/hurtle_sm">Code</a>
+</li>
+<li>
+<a href="./docs/architecture.md">Service Orchestrator (SO)</a>: manages the lifecycle of a tenant service instance -&gt; <a href="https://github.com/icclab/hurtle_sample_so">Sample code</a>
+</li>
+<li>
+<a href="./docs/architecture.md">CloudController (CC)</a>: manages and abstracts under lying resources and SOs -&gt; <a href="https://github.com/icclab/hurtle_cc_api">Code</a>
+</li>
 </ul>
 
 <p>For more details, see:</p>
@@ -164,23 +170,25 @@ See the <a href="./docs/reference.md">repository list</a>.</p>
 <p>The easiest way to understand how hurtle works is through how its life cycle of an application is managed. There are 6 key phases to understand:</p>
 
 <div align="center">
-<img src="./docs/figs/hurtle_lifecycle_2.png" alt="hurtle Text" title="hurtle">
+<img src="https://raw.githubusercontent.com/icclab/hurtle/master/docs/figs/hurtle_lifecycle_2.png" alt="hurtle Text" title="hurtle">
 </div>
 
 <ol>
 <li>
-<strong>Design</strong>: where the topology and dependencies of each component is specified. The model here typically takes the form of a graph.</li>
+<strong>Design</strong>: where the topology and dependencies of each service component is specified. The model here typically takes the form of a graph.</li>
 <li>
 <strong>Implementation</strong>: This is where the developer(s) needs to implement the actual software that will be provided as a service through hurtle</li>
 <li>
-<strong>Deploy</strong>: the complete fleet of resources and services are deployed according to a plan. At this stage they are not configured.</li>
+<strong>Deploy</strong>: the complete fleet of resources and services are deployed according to a plan executed by hurtle. At this stage they are not configured.</li>
 <li>
-<strong>Provision</strong>: each resource and service is correctly provisioned and configured. This must be done such that one service or resource is not without a required operational dependency (e.g. a php application without its database).</li>
+<strong>Provision</strong>: each resource and service is correctly provisioned and configured by hurtle. This must be done such that one service or resource is not without a required operational dependency (e.g. a php application without its database).</li>
 <li>
-<strong>Runtime</strong>: once all components of an orchestration are running the next key element is that they are managed. To manage means at the most basic level to monitor the components. Based on metrics extracted, performance indicators can be formulated using logic-based rules. These when notified where an indicator’s threshold is breached, an Orchestrator could take a remedial action ensuring reliability.</li>
+<strong>Runtime</strong>: once all components of an hurtle orchestration are running, the next key element is that they are managed. To manage means at the most basic level to monitor the components. Based on metrics extracted, performance indicators can be formulated using logic-based rules. These when notified where an indicator’s threshold is breached, an Orchestrator could take a remedial action ensuring reliability.</li>
 <li>
-<strong>Disposal</strong>: Where a service is deployed through cloud services (e.g. infrastructure; VMs) it may be required to destroy the complete orchestration to redeploy a new version or indeed part of the orchestration destroyed.</li>
+<strong>Disposal</strong>: Where a hurtle service instance is destroyed.</li>
 </ol>
+
+<p>More details are in the <a href="./docs/architecture.md">logical</a> and <a href="./docs/hurtle_technical_implementation.md">technical</a> architecture documents.</p>
 
 <h1>
 <a id="getting-started" class="anchor" href="#getting-started" aria-hidden="true"><span class="octicon octicon-link"></span></a>Getting Started</h1>
@@ -257,38 +265,21 @@ developers on the <a href="mailto:icclab-hurtle@dornbirn.zhaw.ch">hurtle-discuss
 
 <p>Hurtle repositories follow no written Guidelines to date.</p>
 
-<h1>
-<a id="dependencies-and-related-projects" class="anchor" href="#dependencies-and-related-projects" aria-hidden="true"><span class="octicon octicon-link"></span></a>Dependencies and Related Projects</h1>
-
-<p>Hurtle uses <a href="http://generic-software-url.com">Generic Software</a> for XZY. This is followed by a generic sentence why and for what it uses it.</p>
-
-<h1>
-<a id="design-principles" class="anchor" href="#design-principles" aria-hidden="true"><span class="octicon octicon-link"></span></a>Design Principles</h1>
-
-<p>The principles that guide hurtle are the key basis of <a href="https://en.wikipedia.org/wiki/Service-oriented_architecture">service oriented architecture</a>.</p>
-
-<ul>
-<li>
-<strong>Autonomous</strong>: The logic governed by a service resides within an explicit boundary. The service has control within this boundary, and is not tightly coupled to execute.</li>
-<li>
-<strong>Share a formal contract</strong>: In order for services to interact, they need not share anything but a collection of published metadata that describes each service and defines the terms of information exchange.</li>
-<li>
-<strong>Loosely coupled</strong>: Dependencies between the underlying logic of a service and its consumers are limited to conformance of the service contract. Services abstract underlying logic, which is invisible to the outside world, beyond what is expressed in the service contract metadata.</li>
-<li>
-<strong>Composable</strong>: Services may compose others, allowing logic to be represented at different levels of granularity. This allows for reusability and the creation of service abstraction layers and/or platforms.</li>
-<li>Reusable: Whether immediate reuse opportunities exist, services are designed to support potential reuse.</li>
-<li>
-<strong>Stateless</strong>: Services should be designed to maximise statelessness even if that means deferring state management elsewhere.</li>
-<li>
-<strong>Discoverable</strong>: Services should allow their descriptions to be discovered and understood by (possibly) humans and service requestors that may be able to make use of their logic.</li>
-</ul>
-
 <h2>
 <a id="license" class="anchor" href="#license" aria-hidden="true"><span class="octicon octicon-link"></span></a>License</h2>
 
 <p>hurtle is licensed under the
 <a href="https://www.apache.org/licenses/LICENSE-2.0">Apache License version 2.0</a>.
 See the file LICENSE.</p>
+
+<h1>
+<a id="made-by" class="anchor" href="#made-by" aria-hidden="true"><span class="octicon octicon-link"></span></a>Made by</h1>
+
+<div align="center">
+<a href="http://blog.zhaw.ch/icclab">
+<img src="https://raw.githubusercontent.com/icclab/hurtle/master/docs/figs/icclab_logo.png" title="hurtle" width="400px">
+</a>
+</div>
       </section>
       <footer>
         <p>This project is maintained by <a href="https://github.com/icclab">icclab</a></p>
