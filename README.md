@@ -69,7 +69,7 @@ For more details, see:
    - Demo applications available
  - Scalable runtime management
  - Complete end-to-end logging of your software
- - Integration with [OpenStack](), [ICCLab's Joyent SDC contribs]()
+ - Integration with [OpenStack](http://www.openstack.org/), [ICCLab's Joyent SDC contribs](https://github.com/icclab/sdc-heat)
  - Handle potential incidents of your software
    - Integration with [ICCLab's Watchtower (Cloud Incident Management)](https://github.com/icclab/watchtower-common)
  - Bill for your software and services
@@ -81,7 +81,7 @@ For more details, see:
 The easiest way to understand how hurtle works is through how its life cycle of an application is managed. There are 6 key phases to understand:
 
 <div align="center">
-<img src="https://www.dropbox.com/s/fojvhf728swsfqk/hurtle-lifecycle.png?dl=1" alt="hurtle Text" title="hurtle">
+<img src="./docs/figs/hurtle_lifecycle_2.png" alt="hurtle Text" title="hurtle">
 </div>
 
  1. **Design**: where the topology and dependencies of each component is specified. The model here typically takes the form of a graph.
