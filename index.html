@@ -1,0 +1,290 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Hurtle by michaelerne</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Hurtle</h1>
+        <p>Offer your Software as a Service</p>
+
+        <p class="view"><a href="https://github.com/michaelerne/hurtle">View the Project on GitHub <small>michaelerne/hurtle</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/michaelerne/hurtle/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/michaelerne/hurtle/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/michaelerne/hurtle">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <div align="center">
+<img src="./docs/figs/hurtle-logo.png" title="hurtle" width="250px">
+<br>
+<img src="./docs/figs/hurtle-logo-text.png" title="hurtle" width="250px">
+</div>
+
+<h1>
+<a id="hurtle" class="anchor" href="#hurtle" aria-hidden="true"><span class="octicon octicon-link"></span></a>hurtle?</h1>
+
+<p>Q: Why is it Called hurtle?</p>
+
+<blockquote>
+<p>A: Cos we like <a href="https://en.wikipedia.org/wiki/Turtles_all_the_way_down">turtles and recursion</a></p>
+</blockquote>
+
+<p>Q: What is your motto?</p>
+
+<blockquote>
+<p>A: "Confusing name, simple orchestration"</p>
+</blockquote>
+
+<h1>
+<a id="why-hurtle" class="anchor" href="#why-hurtle" aria-hidden="true"><span class="octicon octicon-link"></span></a>Why hurtle?</h1>
+
+<p>hurtle lets you:</p>
+
+<blockquote>
+<p>offer your software as a service i.e. "hurtle it!"</p>
+</blockquote>
+
+<p>This is the key aim of hurtle. It can take almost any software and offer it as a service to end-users. </p>
+
+<blockquote>
+<p>hurtle enables service and infrastructure orchestration to easily compose, deploy, provision and manage distributed systems</p>
+</blockquote>
+
+<p>Its functionality all revolves around this idea, so the service offered is also one that can be designed with the cloud in mind, based on the <a href="http://blog.zhaw.ch/icclab/category/research-approach/themes/cloud-native-applications/">cloud-native application research of the ICCLab</a>.</p>
+
+<h2>
+<a id="where-from" class="anchor" href="#where-from" aria-hidden="true"><span class="octicon octicon-link"></span></a>Where From?</h2>
+
+<p>hurtle has two origins:</p>
+
+<ol>
+<li>is the ICCLab's <a href="http://blog.zhaw.ch/icclab/category/research-approach/themes/cloud-orchestration/">Cloud Orchestration Initiative</a>
+</li>
+<li>is in the telcom world and in particular <a href="https://en.wikipedia.org/wiki/Network_functions_virtualization">Network Function Virtualisation</a>. Here hurtle has been used to offer services that have been to date executed directly on or embedded in hardware.</li>
+</ol>
+
+<p>And well, it's all powered upon another hurtle ;-)</p>
+
+<h1>
+<a id="overview" class="anchor" href="#overview" aria-hidden="true"><span class="octicon octicon-link"></span></a>Overview</h1>
+
+<p>This repository provides documentation for hurtle and
+pointers to the other repositories that make up a complete hurtle system.
+See the <a href="./docs/repos.md">repository list</a>.</p>
+
+<p>hurtle consists of the following components:</p>
+
+<ul>
+<li><a href="./docs/architecture.md">Service Manager</a></li>
+<li><a href="./docs/architecture.md">Service Orchestrator</a></li>
+<li><a href="./docs/architecture.md">CloudController</a></li>
+</ul>
+
+<p>For more details, see:</p>
+
+<ul>
+<li>
+<a href="./docs/architecture.md">hurtle's Architecture</a> for overall architecture.</li>
+<li>
+<a href="./docs/reference.md">hurtle Reference</a> for an overview of each component.</li>
+<li>The <a href="./docs/herpderp.md">herp derp</a> for herp derp</li>
+</ul>
+
+<h1>
+<a id="features" class="anchor" href="#features" aria-hidden="true"><span class="octicon octicon-link"></span></a>Features</h1>
+
+<ul>
+<li>Complete orchestration of your software
+
+<ul>
+<li>Resources it uses (e.g. virtual machines, networks)</li>
+<li>External services it needs</li>
+</ul>
+</li>
+<li>Multi-dc/multi-region support
+
+<ul>
+<li>including inter-DC connectivity</li>
+</ul>
+</li>
+<li>Easy implementation of your service API</li>
+<li>Guided implementation of your service instance manager
+
+<ul>
+<li>Many languages supported including Python, Java, Perl, PHP</li>
+<li>Demo applications available</li>
+</ul>
+</li>
+<li>Scalable runtime management</li>
+<li>Complete end-to-end logging of your software</li>
+<li>Integration with <a href="">OpenStack</a>, <a href="">ICCLab's Joyent SDC contribs</a>
+</li>
+<li>Handle potential incidents of your software
+
+<ul>
+<li>Integration with <a href="https://github.com/icclab/watchtower-common">ICCLab's Watchtower (Cloud Incident Management)</a>
+</li>
+</ul>
+</li>
+<li>Bill for your software and services
+
+<ul>
+<li>Integration with <a href="https://icclab.github.io/cyclops/">ICCLab's Cyclops (Rating, charging &amp; Billing)</a>
+</li>
+</ul>
+</li>
+<li>Leverages Open Cloud Standards (<a href="http://www.occi-wg.org">OCCI</a>, <a href="http://www.openstack.org">OpenStack</a>)</li>
+</ul>
+
+<h1>
+<a id="how-does-hurtle-work" class="anchor" href="#how-does-hurtle-work" aria-hidden="true"><span class="octicon octicon-link"></span></a>How Does hurtle Work?</h1>
+
+<p>The easiest way to understand how hurtle works is through how its life cycle of an application is managed. There are 6 key phases to understand:</p>
+
+<div align="center">
+<img src="https://www.dropbox.com/s/fojvhf728swsfqk/hurtle-lifecycle.png?dl=1" alt="hurtle Text" title="hurtle">
+</div>
+
+<ol>
+<li>
+<strong>Design</strong>: where the topology and dependencies of each component is specified. The model here typically takes the form of a graph.</li>
+<li>
+<strong>Implementation</strong>: <strong><em>TODO</em></strong>
+</li>
+<li>
+<strong>Deploy</strong>: the complete fleet of resources and services are deployed according to a plan. At this stage they are not configured.</li>
+<li>
+<strong>Provision</strong>: each resource and service is correctly provisioned and configured. This must be done such that one service or resource is not without a required operational dependency (e.g. a php application without its database).</li>
+<li>
+<strong>Runtime</strong>: once all components of an orchestration are running the next key element is that they are managed. To manage means at the most basic level to monitor the components. Based on metrics extracted, performance indicators can be formulated using logic-based rules. These when notified where an indicator’s threshold is breached, an Orchestrator could take a remedial action ensuring reliability.</li>
+<li>
+<strong>Disposal</strong>: Where a service is deployed through cloud services (e.g. infrastructure; VMs) it may be required to destroy the complete orchestration to redeploy a new version or indeed part of the orchestration destroyed.</li>
+</ol>
+
+<h1>
+<a id="getting-started" class="anchor" href="#getting-started" aria-hidden="true"><span class="octicon octicon-link"></span></a>Getting Started</h1>
+
+<h2>
+<a id="developer-setup-with-devstack" class="anchor" href="#developer-setup-with-devstack" aria-hidden="true"><span class="octicon octicon-link"></span></a>Developer setup with devstack</h2>
+
+<p>Or the quick and fast way...</p>
+
+<ol>
+<li><code>curl https://get.hurtle.it | bash</code></li>
+<li>???</li>
+<li>Profit</li>
+</ol>
+
+<h2>
+<a id="installing-hurtle-on-openstack" class="anchor" href="#installing-hurtle-on-openstack" aria-hidden="true"><span class="octicon octicon-link"></span></a>Installing Hurtle on OpenStack</h2>
+
+<p>Please see the <a href="./docs/installation_guide.md">installation guide</a> for more details.</p>
+
+<h1>
+<a id="roadmap" class="anchor" href="#roadmap" aria-hidden="true"><span class="octicon octicon-link"></span></a>Roadmap</h1>
+
+<p>Hurtling along soon:</p>
+
+<ul>
+<li>More examples including the <a href="https://github.com/icclab/cna-seed-project"> cloud native Zurmo implementation from ICCLab</a>
+</li>
+<li>Enhanced workload placement, dynamic policy-based</li>
+<li>Support for docker-registry deployed containers</li>
+<li>Runtime updates to service and resource topologies</li>
+<li>CI and CD support
+
+<ul>
+<li>safe monitored dynamic service updates</li>
+</ul>
+</li>
+<li>TOSCA support</li>
+<li>Support for VMware and CloudStack</li>
+<li>User interface to visualise resource and services relationships</li>
+<li>Additional external service endpoint protocol support</li>
+</ul>
+
+<h1>
+<a id="community--support" class="anchor" href="#community--support" aria-hidden="true"><span class="octicon octicon-link"></span></a>Community &amp; Support</h1>
+
+<p>Report bugs and request features using <a href="https://github.com/icclab/hurtle/issues">GitHub Issues</a>. For additional resources, you can contact the maintainers directly. Community discussion about turtle happens in one main place:</p>
+
+<ul>
+<li>The <em>hurtle-discuss</em> mailing list. Once you <a href="https://mailman.engineering.zhaw.ch/mailman/listinfo/icclab-hurtle">subscribe to the list</a>,
+you can send mail to the list address: <a href="mailto:icclab-hurtle@dornbirn.zhaw.ch">icclab-hurtle@dornbirn.zhaw.ch</a>
+The mailing list archives are also <a href="https://mailman.engineering.zhaw.ch/pipermail/icclab-hurtle/">available on the web</a>.</li>
+</ul>
+
+<p>You can follow <a href="https://twitter.com/hurtle_it">@hurtle_it</a> on
+Twitter for updates and of course <a href="http://blog.zhaw.ch/icclab/tag/hurtle/">on the ICCLab blog</a></p>
+
+<h2>
+<a id="contributing" class="anchor" href="#contributing" aria-hidden="true"><span class="octicon octicon-link"></span></a>Contributing</h2>
+
+<p>To report bugs or request features, submit issues <a href="https://github.com/icclab/hurtle/issues">here on
+GitHub</a>..
+If you're contributing code, make pull requests to the appropriate
+repositories (see <a href="./docs/repos.md">the repo overview</a>).
+If you're contributing something substantial, you should first contact
+developers on the <a href="mailto:icclab-hurtle@dornbirn.zhaw.ch">hurtle-discuss mailing list</a>
+(<a href="https://mailman.engineering.zhaw.ch/mailman/listinfo/icclab-hurtle">subscribe</a>.</p>
+
+<p>For urgent questions please contact the <a href="./docs/maintainers.md">maintainers</a> directly.</p>
+
+<p>Hurtle repositories follow no written Guidelines to date.</p>
+
+<h1>
+<a id="dependencies-and-related-projects" class="anchor" href="#dependencies-and-related-projects" aria-hidden="true"><span class="octicon octicon-link"></span></a>Dependencies and Related Projects</h1>
+
+<p>Hurtle uses <a href="http://generic-software-url.com">Generic Software</a> for XZY. This is followed by a generic sentence why and for what it uses it.</p>
+
+<h1>
+<a id="design-principles" class="anchor" href="#design-principles" aria-hidden="true"><span class="octicon octicon-link"></span></a>Design Principles</h1>
+
+<p>The principles that guide hurtle are the key basis of <a href="https://en.wikipedia.org/wiki/Service-oriented_architecture">service oriented architecture</a>.</p>
+
+<ul>
+<li>
+<strong>Autonomous</strong>: The logic governed by a service resides within an explicit boundary. The service has control within this boundary, and is not tightly coupled to execute.</li>
+<li>
+<strong>Share a formal contract</strong>: In order for services to interact, they need not share anything but a collection of published metadata that describes each service and defines the terms of information exchange.</li>
+<li>
+<strong>Loosely coupled</strong>: Dependencies between the underlying logic of a service and its consumers are limited to conformance of the service contract. Services abstract underlying logic, which is invisible to the outside world, beyond what is expressed in the service contract metadata.</li>
+<li>
+<strong>Composable</strong>: Services may compose others, allowing logic to be represented at different levels of granularity. This allows for reusability and the creation of service abstraction layers and/or platforms.</li>
+<li>Reusable: Whether immediate reuse opportunities exist, services are designed to support potential reuse.</li>
+<li>
+<strong>Stateless</strong>: Services should be designed to maximise statelessness even if that means deferring state management elsewhere.</li>
+<li>
+<strong>Discoverable</strong>: Services should allow their descriptions to be discovered and understood by (possibly) humans and service requestors that may be able to make use of their logic.</li>
+</ul>
+
+<h2>
+<a id="license" class="anchor" href="#license" aria-hidden="true"><span class="octicon octicon-link"></span></a>License</h2>
+
+<p>hurtle is licensed under the
+<a href="https://www.apache.org/licenses/LICENSE-2.0">Apache License version 2.0</a>.
+See the file LICENSE.</p>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/michaelerne">michaelerne</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
