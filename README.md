@@ -1,7 +1,7 @@
 <div align="center" >
-<img src="./docs/figs/hurtle-logo.png" title="hurtle" style="max-width:30%;">
+<img src="./docs/figs/hurtle-logo.png" title="hurtle" width=250px>
 <br/>
-<img src="./docs/figs/hurtle-logo-text.png" title="hurtle" style="max-width:30%;">
+<img src="./docs/figs/hurtle-logo-text.png" title="hurtle" width=250px>
 </div>
 
 # hurtle?
