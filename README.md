@@ -163,3 +163,11 @@ Hurtle repositories follow no written Guidelines to date.
 hurtle is licensed under the
 [Apache License version 2.0](https://www.apache.org/licenses/LICENSE-2.0).
 See the file LICENSE.
+
+# Made by
+
+<div align="center" >
+<a href='http://blog.zhaw.ch/icclab'>
+<img src="./docs/figs/icclab_logo.png" title="hurtle" width=250px>
+</a>
+</div>
