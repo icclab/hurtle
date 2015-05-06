@@ -22,7 +22,11 @@ hurtle lets you:
 
 > offer your software as a service i.e. "hurtle it!"
 
-This is the key aim of hurtle. It can take almost any software and offer it as a service to end-users. 
+This is the key aim of hurtle. 
+
+Hurtle lets you automate the life-cycle management of your service, from deployment of cloud resources all the way to configuration and runtime management (e.g., scaling).
+
+But here comes the best part: hurtle has been designed since its inception to support service composition, so that you can run complex services by (recursively!) composing simple ones. Welcome to truly modular cloud service composition! Microservices anyone?
 
 > hurtle enables service and infrastructure orchestration to easily compose, deploy, provision and manage distributed systems
 
