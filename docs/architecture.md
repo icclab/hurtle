@@ -14,8 +14,9 @@ Before delving in the components themselves, it is important to understand the d
 ## Architecture components
 
 All the key components of hurtle are represented in the diagram below.
-
+<div align="center">
 <img src="./figs/hurtle_components.png" alt="hurtle_components" width=500px>
+</div>
 
 Hurtle's fundamental idea is that what is offered to the end user is a *service*. 
 
