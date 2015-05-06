@@ -11,7 +11,7 @@ The End User (EU) is the one actually requesting an instance of a service for hi
 
 <!--## Service Lifecycle
 
-The technical phase (see below diagram) includes essentially all activities from technical design all the way through to technical disposal of a service. <img src="./hurtle_lifecycle.png" alt="hurtle_components" width=500px>
+The technical phase (see below diagram) includes essentially all activities from technical design all the way through to technical disposal of a service. <img src="./figs/hurtle_lifecycle.png" alt="hurtle_components" width=500px>
 * **Design**: Design of the architecture, implementation, deployment, provisioning and operation solutions.* **Implementation**: of the designed architecture, functions, interfaces, controllers, APIs, etc.* **Deployment**: Deployment of the implemented elements, e.g. DCs, cloud, controllers, etc. Provide anything such that the service can be used, but don't provide access to the service. Examples include: 	* Placing a VM image (optional: may already exist) on the IaaS provider and create an instance from it.	* Installing machines (based on VM images, on penguins or whatever that is. So, providing anything preparing the usage of the service.* **Provisioning**: Provisioning of the service environment (e.g. NFs, interfaces, network, etc.). Activation of the service such that the user can actually use it. Examples:	* Installing services, e.g., Apache HTTP server (optional, may already be installed), configure it and activate it. Typically, configuration management frameworks, like Puppet , Chef  and CFEngine  are used here.	* Bringing in policies and whatever is needed to make the service run.* **Operation and Run-Time Management**: in this stage the service instance is ready and running. Activities such as scaling, reconfiguration of Service Instance Components (SICs) are carried out here.* **Disposal**: Release of SICs and the service instance itself is carried out here.
 
 -->
@@ -19,7 +19,7 @@ The technical phase (see below diagram) includes essentially all activities from
 
 All the components are represented in the diagram below.
 
-<img src="./hurtle_components.png" alt="hurtle_components" width=500px>
+<img src="./figs/hurtle_components.png" alt="hurtle_components" width=500px>
 
 Hurtle's fundamental idea is that what is offered to the end user is a *service*. 
 
