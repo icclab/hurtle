@@ -96,48 +96,48 @@ Such a service looks like the example below (note that some methods have been cu
 	        else:
 	            return 'Unknown', 'N/A', ''
 	            
+
+### Infrastructure Template Graph: Heat Template
+
+Finally the resources necessary to create the new service are described in a Heat template. This represents a set of virtual resources such as virtual servers, virtual networks, configuration parameters at boot time, etc.
+
+All information on how to write a Heat template can be found in the [Heat Documentation](http://docs.openstack.org/developer/heat/).
+
 ### Upcoming: Service Template Graph: JSON Manifest
 
-This new easy to use feature will be available in the next release. An important feature of Hurtle is to be able to compose services, thus describing which services are required by another service is critical to a non-atomic service. This is realized by a Service Manifest as a JSON file in our default implementation. Example below:
+This new easy to use feature will be available in the next release. The JSON manifest will be a streamlined feature of Hurtle to fully describe a service in one file, replacing the service definition at the same time. This is realized by a Service Manifest as a JSON file in our default implementation. Example below:
 
 	{
-	    "service_type": "http://schemas.mobile-cloud-networking.eu/occi/sm#e2e",
+	    "service_type": "http://schemas.hurtle.it/occi/sm#e2e",
 	    "service_description": "Example composed service",
 	    "service_attributes": {
-	        "mcn.cdn.id": "immutable",
-	        "mcn.cdn.password": "immutable",
-	        "mcn.dss.mgt": "immutable",
-	        "mcn.endpoint.api": "immutable",
-	        "mcn.endpoint.forwarder": "immutable",
-	        "mcn.endpoint.maas": "immutable",
-	        "mcn.endpoint.rcb.mgt": "immutable",
-	        "mcn.endpoints.cdn.mgt": "immutable",
-	        "mcn.endpoints.cdn.origin": "immutable"
+	       "endpoint.my_service.mgt": "immutable",
+	       "endpoint.other_service.mgt"": "mutable"
 	    },
 	    "service_endpoint": "http://e2e.cloudcomplab.ch:8888/e2e/",
 	    "depends_on": [
-	      { "http://schemas.mobile-cloud-networking.eu/occi/sm#cdn": { "inputs": [] } },
-	      { "http://schemas.mobile-cloud-networking.eu/occi/sm#maas": { "inputs": [] } },
-	      { "http://schemas.mobile-cloud-networking.eu/occi/sm#rcb": { "inputs": [] } },
-	      { "http://schemas.mobile-cloud-networking.eu/occi/sm#dnsaas": {
+	      { "http://schemas.hurtle.it/occi/sm#cdn": { "inputs": [] } },
+	      { "http://schemas.hurtle.it/occi/sm#maas": { "inputs": [] } },
+	      { "http://schemas.hurtle.it/occi/sm#rcb": { "inputs": [] } },
+	      { "http://schemas.hurtle.it/occi/sm#dnsaas": {
 	          "inputs": [
-	            "http://schemas.mobile-cloud-networking.eu/occi/sm#maas#mcn.endpoint.maas"
+	            "http://schemas.hurtle.it/occi/sm#maas#mcn.endpoint.maas"
 	          ] }
 	      },
-	      { "http://schemas.mobile-cloud-networking.eu/occi/sm#dss": {
+	      { "http://schemas.hurtle.it/occi/sm#dss": {
 	        "inputs": [
-	          "http://schemas.mobile-cloud-networking.eu/occi/sm#maas#mcn.endpoint.maas",
-	          "http://schemas.mobile-cloud-networking.eu/occi/sm#dnsaas#mcn.endpoint.api",
-	          "http://schemas.mobile-cloud-networking.eu/occi/sm#cdn#mcn.endpoints.cdn.mgt",
-	          "http://schemas.mobile-cloud-networking.eu/occi/sm#cdn#mcn.endpoints.cdn.origin",
-	          "http://schemas.mobile-cloud-networking.eu/occi/sm#cdn#mcn.cdn.password",
-	          "http://schemas.mobile-cloud-networking.eu/occi/sm#cdn#mcn.cdn.id"
+	          "http://schemas.hurtle.it/occi/sm#maas#mcn.endpoint.maas",
+	          "http://schemas.hurtle.it/occi/sm#dnsaas#mcn.endpoint.api",
+	          "http://schemas.hurtle.it/occi/sm#cdn#mcn.endpoints.cdn.mgt",
+	          "http://schemas.hurtle.it/occi/sm#cdn#mcn.endpoints.cdn.origin",
+	          "http://schemas.hurtle.it/occi/sm#cdn#mcn.cdn.password",
+	          "http://schemas.hurtle.it/occi/sm#cdn#mcn.cdn.id"
 	        ] }
 	      }
 	    ],
 	    "resources": [
 	        {
-	            "http://schemas.mobile-cloud-networking.eu/occi/service#cc": {
+	            "http://schemas.hurtle.it/occi/service#cc": {
 	                "uri": "file:///root/my/bundle/data/itg.yaml"
 	                "location": "RegionOne"
 	            }
@@ -145,13 +145,11 @@ This new easy to use feature will be available in the next release. An important
 	    ]
 	}
 
-Of note is the section named “depends_on” (Line 22). In this section the service dependencies are listed. A service dependency is noted by the service type identifier and the set of the required attributes (identified by name) a service request needs. The resolution of these service types and the required parameters is carried out by the SO’s Resolver component.The initial example described above does not use any external services and does not need a service manifest in the current implementation.
-
-### Infrastructure Template Graph: Heat Template
+Of note is the section named “depends_on”. In this section the service dependencies are listed. A service dependency is noted by the service type identifier and the set of the required attributes (identified by name) a service request needs.
 
-Finally the resources necessary to create the new service are described in a Heat template. This represents a set of virtual resources such as virtual servers, virtual networks, configuration parameters at boot time, etc.
+The first part is similar to what is currently in the service definition file, indeed future releases will include a generator which takes this file and automatically creates the service manager with the service parameters.
+The initial example described in the previous section does not use any external services and does not need a service manifest in the current implementation.
 
-All information on how to write a Heat template can be found in the [Heat Documentation](http://docs.openstack.org/developer/heat/).
 
 <!--## Configuration File
 
@@ -188,7 +186,7 @@ To create a keystone token issue the following commands:
 
 ### Create a Service Instance
 
-	curl -v -X POST http://localhost:8888/example/ -H 'Category: example; scheme="http://schemas.mobile-cloud-networking.eu/occi/sm#"; class="kind";' -H 'content-type: text/occi' -H 'x-tenant-name: YOUR_TENANT_NAME' -H 'x-auth-token: YOUR_KEYSTONE_TOKEN'
+	curl -v -X POST http://localhost:8888/example/ -H 'Category: example; scheme="http://schemas.hurtle.it/occi/sm#"; class="kind";' -H 'content-type: text/occi' -H 'x-tenant-name: YOUR_TENANT_NAME' -H 'x-auth-token: YOUR_KEYSTONE_TOKEN'
 
 This request, if successful, will return a service instance ID that can be used to request further details about the service instance.
 
