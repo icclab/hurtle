@@ -41,7 +41,7 @@ And well, it's all powered upon another hurtle ;-)
 
 This repository provides documentation for hurtle and
 pointers to the other repositories that make up a complete hurtle system.
-See the [repository list](./docs/repos.md).
+See the [repository list](./docs/reference.md).
 
 hurtle consists of the following components:
 
@@ -52,8 +52,7 @@ hurtle consists of the following components:
 For more details, see:
 
 - [hurtle's Architecture](./docs/architecture.md) for overall architecture.
-- [hurtle Reference](./docs/reference.md) for an overview of each component.
-- The [herp derp](./docs/herpderp.md) for herp derp
+- [hurtle Reference & Repolist](./docs/reference.md) for an overview of each component.
 
 # Features
 
@@ -148,7 +147,7 @@ Twitter for updates and of course [on the ICCLab blog](http://blog.zhaw.ch/iccla
 To report bugs or request features, submit issues [here on
 GitHub](https://github.com/icclab/hurtle/issues)..
 If you're contributing code, make pull requests to the appropriate
-repositories (see [the repo overview](./docs/repos.md)).
+repositories (see [the repo overview](./docs/reference.md)).
 If you're contributing something substantial, you should first contact
 developers on the [hurtle-discuss mailing list](mailto:icclab-hurtle@dornbirn.zhaw.ch)
 ([subscribe](https://mailman.engineering.zhaw.ch/mailman/listinfo/icclab-hurtle).
