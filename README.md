@@ -51,7 +51,9 @@ hurtle consists of the following components:
 
 For more details, see:
 
-- [hurtle's Architecture](./docs/architecture.md) for overall architecture.
+- [hurtle's Architecture](./docs/architecture.md) for overall logical architecture.
+- [hurtle's Technical Implementaion](./docs/hurtle_technical_implementation.md) for details on the implementation of the support components.
+- [hurtle's How to write your Hurtle Service?](./docs/how_to_write_a_hurtle_service.md) for details on the components necessary to create a hurtle manageable service. Note that a lot of information can also be found directly in the examples provided here!
 - [hurtle Reference & Repolist](./docs/reference.md) for an overview of each component.
 
 # Features
