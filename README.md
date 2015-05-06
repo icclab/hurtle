@@ -1,7 +1,7 @@
 <div align="center" >
-<img src="./docs/figs/hurtle-logo.png" title="hurtle" width=250px>
+<img src="https://raw.githubusercontent.com/icclab/hurtle/master/docs/figs/hurtle-logo.png" title="hurtle" width=250px>
 <br/>
-<img src="./docs/figs/hurtle-logo-text.png" title="hurtle" width=250px>
+<img src="https://raw.githubusercontent.com/icclab/hurtle/master/docs/figs/hurtle-logo-text.png" title="hurtle" width=250px>
 </div>
 
 # hurtle?
@@ -85,7 +85,7 @@ For more details, see:
 The easiest way to understand how hurtle works is through how its life cycle of an application is managed. There are 6 key phases to understand:
 
 <div align="center">
-<img src="./docs/figs/hurtle_lifecycle_2.png" alt="hurtle Text" title="hurtle">
+<img src="https://raw.githubusercontent.com/icclab/hurtle/master/docs/figs/hurtle_lifecycle_2.png" alt="hurtle Text" title="hurtle">
 </div>
 
  1. **Design**: where the topology and dependencies of each service component is specified. The model here typically takes the form of a graph.
@@ -170,6 +170,6 @@ See the file LICENSE.
 
 <div align="center" >
 <a href='http://blog.zhaw.ch/icclab'>
-<img src="./docs/figs/icclab_logo.png" title="hurtle" width=250px>
+<img src="https://raw.githubusercontent.com/icclab/hurtle/master/docs/figs/icclab_logo.png" title="hurtle" width=400px>
 </a>
 </div>
