@@ -4,7 +4,7 @@ We will use examples written in Python here but keep in mind that Service Orches
 
 Writing a service requires a developer to write the following components:
 
-* a Service Definition, which will be the *Service Manager* entrypoint for the new service.
+* a Service Definition, which will be the *Service Manager* entrypoint for the new se/Users/florian/repos/hurtle/docs/how_to_write_a_hurtle_service.mdrvice.
 * a Service Bundle, containing all necessary details for the deployment and management of a service.
 
 ## Service Definition
@@ -164,15 +164,41 @@ By default a configuration file called sm.cfg can be found under etc/ with expla
 
 The easiest is to have a directory structure similar to what is written in the examples with the service definition python file along with the service bundle directory in the same folder.
 
-Running your new service requires you to launch your service manager (through the service definition) with a command similar to:
+Running your new service requires you to launch your service manager (through the service definition) with a command such as:
 
 	python ./example_service_manager.py -c etc/sm.cfg
 
-By default it runs on port 8888 and accept all the curl commands described here.**TODO: Link**
+By default it runs on port 8888 and accept all the curl commands described here.
+
+## Use it!
+### Authentication
+Authentication and access to the SM is mediated by OpenStack keystone. In order to make a service instantiation request against a SM the end user needs to supply:
+
+ * tenant name: this should be provided through the *X-Auth-Token* HTTP header
+ * token: this should be provided through the *X-Tenant-Name* HTTP header.
+
+#### Generating a Keystone Token
+**IMPORTANT:** your user must be assigned *admin* permissions for the project they're part of.
+
+For this to work you will need the keystone command line tools installed (*pip install python-keystoneclient*) and also your OpenStack credentials.
+
+To create a keystone token issue the following commands:
+
+    keystone token-get
 
 ### Create a Service Instance
+
+	curl -v -X POST http://localhost:8888/example/ -H 'Category: example; scheme="http://schemas.mobile-cloud-networking.eu/occi/sm#"; class="kind";' -H 'content-type: text/occi' -H 'x-tenant-name: YOUR_TENANT_NAME' -H 'x-auth-token: YOUR_KEYSTONE_TOKEN'
+
+This request, if successful, will return a service instance ID that can be used to request further details about the service instance.
+
 ### Retrieve a Service Instance
+
+	curl -v -X GET http://localhost:8888/epc/59eb41f9-8cbc-4bbd-bb16-4101703d0e13 -H 'x-tenant-name: YOUR_TENANT_NAME' -H 'x-auth-token: YOUR_KEYSTONE_TOKEN'
+
 ### Delete a Service Instance
+    
+    curl -v -X DELETE http://localhost:8888/epc/59eb41f9-8cbc-4bbd-bb16-4101703d0e13 -H 'x-tenant-name: YOUR_TENANT_NAME' -H 'x-auth-token: YOUR_KEYSTONE_TOKEN'
 
 
 # Examples
