@@ -172,3 +172,11 @@ See the file LICENSE.
 <img src="https://raw.githubusercontent.com/icclab/hurtle/master/docs/figs/icclab_logo.png" title="hurtle" width=400px>
 </a>
 </div>
+
+# Supported by
+
+<div align="center" >
+<a href='http://blog.zhaw.ch/icclab'>
+<img src="https://raw.githubusercontent.com/icclab/hurtle/master/docs/figs/mcn_logo.png" title="mobile cloud networking" width=400px>
+</a>
+</div>
