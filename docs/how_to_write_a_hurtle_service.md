@@ -4,7 +4,7 @@ We will use examples written in Python here but keep in mind that Service Orches
 
 Writing a service requires a developer to write the following components:
 
-* a Service Definition, which will be the *Service Manager* entrypoint for the new se/Users/florian/repos/hurtle/docs/how_to_write_a_hurtle_service.mdrvice.
+* a Service Definition, which will be the *Service Manager* entrypoint for the new service.
 * a Service Bundle, containing all necessary details for the deployment and management of a service.
 
 ## Service Definition
@@ -148,7 +148,8 @@ This new easy to use feature will be available in the next release. The JSON man
 Of note is the section named “depends_on”. In this section the service dependencies are listed. A service dependency is noted by the service type identifier and the set of the required attributes (identified by name) a service request needs.
 
 The first part is similar to what is currently in the service definition file, indeed future releases will include a generator which takes this file and automatically creates the service manager with the service parameters.
-The initial example described in the previous section does not use any external services and does not need a service manifest in the current implementation.
+
+The initial example described in the previous section does not use any external services and does not need a service manifest in the current implementation.
 
 
 <!--## Configuration File
