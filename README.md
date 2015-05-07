@@ -9,11 +9,11 @@
 
 Q: Why is it Called hurtle?
 
-> A: Cos we like [turtles and recursion](https://en.wikipedia.org/wiki/Turtles_all_the_way_down)
+> A: Cos we like [turtles and recursion](https://en.wikipedia.org/wiki/Turtles_all_the_way_down).
 
 Q: What is your motto?
 
-> A: "Confusing name, simple orchestration"
+> A: "Confusing name, simple orchestration".
 
 
 # Why hurtle?
@@ -22,11 +22,10 @@ hurtle lets you:
 
 > offer your software as a service i.e. "hurtle it!"
 
-This is the key aim of hurtle. 
-
 Hurtle lets you automate the life-cycle management of your service, from deployment of cloud resources all the way to configuration and runtime management (e.g., scaling).
 
-But here comes the best part: hurtle has been designed since its inception to support service composition, so that you can run complex services by (recursively!) composing simple ones. Welcome to truly modular cloud service composition! Microservices anyone?
+**But here comes the best part: **
+> hurtle has been designed since its inception to support service composition, so that you can run complex services by (recursively!) composing simple ones. Welcome to truly modular cloud service composition! Microservices anyone?
 
 > hurtle enables service and infrastructure orchestration to easily compose, deploy, provision and manage distributed systems
 
@@ -51,7 +50,7 @@ hurtle consists of the following components:
 
 - [Service Manager (SM)](./docs/architecture.md): receives requests for new tenant service instances -> [Code](https://github.com/icclab/hurtle_sm)
 - [Service Orchestrator (SO)](./docs/architecture.md): manages the lifecycle of a tenant service instance -> [Sample code](https://github.com/icclab/hurtle_sample_so)
-- [CloudController (CC)](./docs/architecture.md): manages and abstracts under lying resources and SOs -> [Code](https://github.com/icclab/hurtle_cc_api)
+- [CloudController (CC)](./docs/architecture.md): manages and abstracts underlying resources and SOs -> [Code](https://github.com/icclab/hurtle_cc_api)
 
 For more details, see:
 
