@@ -6,7 +6,7 @@
     <title>Hurtle by icclab</title>
 
     <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <link rel="stylesheet" href="stylesheets/github-light.css">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -40,13 +40,13 @@
 <p>Q: Why is it Called hurtle?</p>
 
 <blockquote>
-<p>A: Cos we like <a href="https://en.wikipedia.org/wiki/Turtles_all_the_way_down">turtles and recursion</a></p>
+<p>A: Cos we like <a href="https://en.wikipedia.org/wiki/Turtles_all_the_way_down">turtles and recursion</a>.</p>
 </blockquote>
 
 <p>Q: What is your motto?</p>
 
 <blockquote>
-<p>A: "Confusing name, simple orchestration"</p>
+<p>A: "Confusing name, simple orchestration".</p>
 </blockquote>
 
 <h1>
@@ -58,13 +58,13 @@
 <p>offer your software as a service i.e. "hurtle it!"</p>
 </blockquote>
 
-<p>This is the key aim of hurtle. </p>
-
 <p>Hurtle lets you automate the life-cycle management of your service, from deployment of cloud resources all the way to configuration and runtime management (e.g., scaling).</p>
 
-<p>But here comes the best part: hurtle has been designed since its inception to support service composition, so that you can run complex services by (recursively!) composing simple ones. Welcome to truly modular cloud service composition! Microservices anyone?</p>
+<p>*<em>But here comes the best part: *</em></p>
 
 <blockquote>
+<p>hurtle has been designed since its inception to support service composition, so that you can run complex services by (recursively!) composing simple ones. Welcome to truly modular cloud service composition! Microservices anyone?</p>
+
 <p>hurtle enables service and infrastructure orchestration to easily compose, deploy, provision and manage distributed systems</p>
 </blockquote>
 
@@ -88,19 +88,19 @@
 
 <p>This repository provides documentation for hurtle and
 pointers to the other repositories that make up a complete hurtle system.
-See the <a href="https://github.com/icclab/hurtle/blob/master/docs/reference.md">repository list</a>.</p>
+See the <a href="./docs/reference.md">repository list</a>.</p>
 
 <p>hurtle consists of the following components:</p>
 
 <ul>
 <li>
-<a href="https://github.com/icclab/hurtle/blob/master/docs/architecture.md">Service Manager (SM)</a>: receives requests for new tenant service instances -&gt; <a href="https://github.com/icclab/hurtle_sm">Code</a>
+<a href="./docs/architecture.md">Service Manager (SM)</a>: receives requests for new tenant service instances -&gt; <a href="https://github.com/icclab/hurtle_sm">Code</a>
 </li>
 <li>
-<a href="https://github.com/icclab/hurtle/blob/master/docs/architecture.md">Service Orchestrator (SO)</a>: manages the lifecycle of a tenant service instance -&gt; <a href="https://github.com/icclab/hurtle_sample_so">Sample code</a>
+<a href="./docs/architecture.md">Service Orchestrator (SO)</a>: manages the lifecycle of a tenant service instance -&gt; <a href="https://github.com/icclab/hurtle_sample_so">Sample code</a>
 </li>
 <li>
-<a href="https://github.com/icclab/hurtle/blob/master/docs/architecture.md">CloudController (CC)</a>: manages and abstracts underlying resources and SOs -&gt; <a href="https://github.com/icclab/hurtle_cc_api">Code</a>
+<a href="./docs/architecture.md">CloudController (CC)</a>: manages and abstracts underlying resources and SOs -&gt; <a href="https://github.com/icclab/hurtle_cc_api">Code</a>
 </li>
 </ul>
 
@@ -108,13 +108,13 @@ See the <a href="https://github.com/icclab/hurtle/blob/master/docs/reference.md"
 
 <ul>
 <li>
-<a href="https://github.com/icclab/hurtle/blob/master/docs/architecture.md">hurtle's Architecture</a> for overall logical architecture.</li>
+<a href="./docs/architecture.md">hurtle's Architecture</a> for overall logical architecture.</li>
 <li>
-<a href="https://github.com/icclab/hurtle/blob/master/docs/hurtle_technical_implementation.md">hurtle's Technical Architecture</a> for details on the implementation of the support components.</li>
+<a href="./docs/hurtle_technical_implementation.md">hurtle's Technical Architecture</a> for details on the implementation of the support components.</li>
 <li>
-<a href="https://github.com/icclab/hurtle/blob/master/docs/how_to_write_a_hurtle_service.md">hurtle's How to write your Hurtle Service?</a> for details on the components necessary to create a hurtle manageable service. Note that a lot of information can also be found directly in the examples provided here!</li>
+<a href="./docs/how_to_write_a_hurtle_service.md">hurtle's How to write your Hurtle Service?</a> for details on the components necessary to create a hurtle manageable service. Note that a lot of information can also be found directly in the examples provided here!</li>
 <li>
-<a href="https://github.com/icclab/hurtle/blob/master/docs/reference.md">hurtle Reference &amp; Repolist</a> for an overview of each component.</li>
+<a href="./docs/reference.md">hurtle Reference &amp; Repolist</a> for an overview of each component.</li>
 </ul>
 
 <h1>
@@ -134,7 +134,7 @@ See the <a href="https://github.com/icclab/hurtle/blob/master/docs/reference.md"
 <li>including inter-DC connectivity</li>
 </ul>
 </li>
-<li>Easy implementation of your service API - See <a href="https://github.com/icclab/hurtle/blob/master/docs/how_to_write_a_hurtle_service.md">how to write your Hurtle Service</a>
+<li>Easy implementation of your service API - See <a href="./docs/how_to_write_a_hurtle_service.md">how to write your Hurtle Service</a>
 </li>
 <li>Guided implementation of your service instance manager
 
@@ -188,7 +188,7 @@ See the <a href="https://github.com/icclab/hurtle/blob/master/docs/reference.md"
 <strong>Disposal</strong>: Where a hurtle service instance is destroyed.</li>
 </ol>
 
-<p>More details are in the <a href="https://github.com/icclab/hurtle/blob/master/docs/architecture.md">logical</a> and <a href="https://github.com/icclab/hurtle/blob/master/docs/hurtle_technical_implementation.md">technical</a> architecture documents.</p>
+<p>More details are in the <a href="./docs/architecture.md">logical</a> and <a href="./docs/hurtle_technical_implementation.md">technical</a> architecture documents.</p>
 
 <h1>
 <a id="getting-started" class="anchor" href="#getting-started" aria-hidden="true"><span class="octicon octicon-link"></span></a>Getting Started</h1>
@@ -256,12 +256,12 @@ Twitter for updates and of course <a href="http://blog.zhaw.ch/icclab/tag/hurtle
 <p>To report bugs or request features, submit issues <a href="https://github.com/icclab/hurtle/issues">here on
 GitHub</a>..
 If you're contributing code, make pull requests to the appropriate
-repositories (see <a href="https://github.com/icclab/hurtle/blob/master/docs/reference.md">the repo overview</a>).
+repositories (see <a href="./docs/reference.md">the repo overview</a>).
 If you're contributing something substantial, you should first contact
 developers on the <a href="mailto:icclab-hurtle@dornbirn.zhaw.ch">hurtle-discuss mailing list</a>
 (<a href="https://mailman.engineering.zhaw.ch/mailman/listinfo/icclab-hurtle">subscribe</a>.</p>
 
-<p>For urgent questions please contact the <a href="https://github.com/icclab/hurtle/blob/master/docs/maintainers.md">maintainers</a> directly.</p>
+<p>For urgent questions please contact the <a href="./docs/maintainers.md">maintainers</a> directly.</p>
 
 <p>Hurtle repositories follow no written Guidelines to date.</p>
 
@@ -278,6 +278,15 @@ See the file LICENSE.</p>
 <div align="center">
 <a href="http://blog.zhaw.ch/icclab">
 <img src="https://raw.githubusercontent.com/icclab/hurtle/master/docs/figs/icclab_logo.png" title="hurtle" width="400px">
+</a>
+</div>
+
+<h1>
+<a id="supported-by" class="anchor" href="#supported-by" aria-hidden="true"><span class="octicon octicon-link"></span></a>Supported by</h1>
+
+<div align="center">
+<a href="http://blog.zhaw.ch/icclab">
+<img src="https://raw.githubusercontent.com/icclab/hurtle/master/docs/figs/mcn_logo.png" title="mobile cloud networking" width="400px">
 </a>
 </div>
       </section>
