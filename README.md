@@ -51,20 +51,20 @@ And well, it's all powered upon another hurtle ;-)
 
 This repository provides documentation for hurtle and
 pointers to the other repositories that make up a complete hurtle system.
-See the [repository list](./docs/reference.md).
+See the [repository list](https://github.com/icclab/hurtle/blob/master/docs/reference.md).
 
 hurtle consists of the following components:
 
-- [Service Manager (SM)](./docs/architecture.md): receives requests for new tenant service instances -> [Code](https://github.com/icclab/hurtle_sm)
-- [Service Orchestrator (SO)](./docs/architecture.md): manages the lifecycle of a tenant service instance -> [Sample code](https://github.com/icclab/hurtle_sample_so)
-- [CloudController (CC)](./docs/architecture.md): manages and abstracts underlying resources and SOs -> [Code](https://github.com/icclab/hurtle_cc_api)
+- [Service Manager (SM)](https://github.com/icclab/hurtle/blob/master/docs/architecture.md): receives requests for new tenant service instances → [Code](https://github.com/icclab/hurtle_sm)
+- [Service Orchestrator (SO)](https://github.com/icclab/hurtle/blob/master/docs/architecture.md): manages the lifecycle of a tenant service instance → [Sample code](https://github.com/icclab/hurtle_sample_so)
+- [CloudController (CC)](https://github.com/icclab/hurtle/blob/master/docs/architecture.md): manages and abstracts underlying resources and SOs → [Code](https://github.com/icclab/hurtle_cc_api)
 
 For more details, see:
 
-- [hurtle's Architecture](./docs/architecture.md) for overall logical architecture.
-- [hurtle's Technical Architecture](./docs/hurtle_technical_implementation.md) for details on the implementation of the support components.
-- [hurtle's How to write your Hurtle Service?](./docs/how_to_write_a_hurtle_service.md) for details on the components necessary to create a hurtle manageable service. Note that a lot of information can also be found directly in the examples provided here!
-- [hurtle Reference & Repolist](./docs/reference.md) for an overview of each component.
+- [hurtle's Architecture](https://github.com/icclab/hurtle/blob/master/docs/architecture.md) for overall logical architecture.
+- [hurtle's Technical Architecture](https://github.com/icclab/hurtle/blob/master/docs/hurtle_technical_implementation.md) for details on the implementation of the support components.
+- [hurtle's How to write your Hurtle Service?](https://github.com/icclab/hurtle/blob/master/docs/how_to_write_a_hurtle_service.md) for details on the components necessary to create a hurtle manageable service. Note that a lot of information can also be found directly in the examples provided here!
+- [hurtle Reference & Repolist](https://github.com/icclab/hurtle/blob/master/docs/reference.md) for an overview of each component.
 
 # Features
 
@@ -101,7 +101,7 @@ The easiest way to understand how hurtle works is through how its life cycle of 
  5. **Runtime**: once all components of an hurtle orchestration are running, the next key element is that they are managed. To manage means at the most basic level to monitor the components. Based on metrics extracted, performance indicators can be formulated using logic-based rules. These when notified where an indicator’s threshold is breached, an Orchestrator could take a remedial action ensuring reliability.
  6. **Disposal**: Where a hurtle service instance is destroyed.
  
-More details are in the [logical](./docs/architecture.md) and [technical](./docs/hurtle_technical_implementation.md) architecture documents.
+More details are in the [logical](https://github.com/icclab/hurtle/blob/master/docs/architecture.md) and [technical](https://github.com/icclab/hurtle/blob/master/docs/hurtle_technical_implementation.md) architecture documents.
 
 # Getting Started
 
@@ -157,12 +157,12 @@ Twitter for updates and of course [on the ICCLab blog](http://blog.zhaw.ch/iccla
 To report bugs or request features, submit issues [here on
 GitHub](https://github.com/icclab/hurtle/issues)..
 If you're contributing code, make pull requests to the appropriate
-repositories (see [the repo overview](./docs/reference.md)).
+repositories (see [the repo overview](https://github.com/icclab/hurtle/blob/master/docs/reference.md)).
 If you're contributing something substantial, you should first contact
 developers on the [hurtle-discuss mailing list](mailto:icclab-hurtle@dornbirn.zhaw.ch)
 ([subscribe](https://mailman.engineering.zhaw.ch/mailman/listinfo/icclab-hurtle).
 
-For urgent questions please contact the [maintainers](./docs/maintainers.md) directly.
+For urgent questions please contact the [maintainers](https://github.com/icclab/hurtle/blob/master/docs/maintainers.md) directly.
 
 Hurtle repositories follow no written Guidelines to date.
 
