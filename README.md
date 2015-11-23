@@ -33,10 +33,10 @@ Its functionality all revolves around this idea, so the service offered is also 
 
 ## Where From?
 
-hurtle has two origins:
+hurtle has two origins in:
 
-1. is the ICCLab's [Cloud Orchestration Initiative](http://blog.zhaw.ch/icclab/category/research-approach/themes/cloud-orchestration/)
-2. is in the telcom world and in particular [Network Function Virtualisation](https://en.wikipedia.org/wiki/Network_functions_virtualization) (NFV). Here hurtle has been used to offer services that have been to date executed directly on or embedded in hardware.
+1. the ICCLab's [Cloud Orchestration Initiative](http://blog.zhaw.ch/icclab/category/research-approach/themes/cloud-orchestration/)
+2. the telcom world and in particular [Network Function Virtualisation](https://en.wikipedia.org/wiki/Network_functions_virtualization) (NFV). Here hurtle has been used to offer services that have been to date executed directly on or embedded in hardware.
 
 And well, it's all powered upon another hurtle ;-)
 
