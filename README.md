@@ -40,6 +40,13 @@ hurtle has two origins:
 
 And well, it's all powered upon another hurtle ;-)
 
+## Questions that Hurtle Aims to Address
+
+ * How to monetise your software?
+ * How to deliver your software as a service?
+ * How to compose existing services?
+ * How deliver and maintain reliability?
+
 # Overview
 
 This repository provides documentation for hurtle and
