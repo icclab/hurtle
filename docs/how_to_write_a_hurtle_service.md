@@ -1,5 +1,7 @@
 # How to write a Hurtle-compatible service?
 
+***NOTE***: This document is old and must be updated.
+
 We will use examples written in Python here but keep in mind that Service Orchestrators can use any language supported by OpenShift as long as they implement the necessary calls.
 
 Writing a service requires a developer to write the following components:
