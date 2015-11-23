@@ -160,7 +160,7 @@ If you're contributing code, make pull requests to the appropriate
 repositories (see [the repo overview](https://github.com/icclab/hurtle/blob/master/docs/reference.md)).
 If you're contributing something substantial, you should first contact
 developers on the [hurtle-discuss mailing list](mailto:icclab-hurtle@dornbirn.zhaw.ch)
-([subscribe](https://mailman.engineering.zhaw.ch/mailman/listinfo/icclab-hurtle).
+([subscribe](https://mailman.engineering.zhaw.ch/mailman/listinfo/icclab-hurtle)).
 
 For urgent questions please contact the [maintainers](https://github.com/icclab/hurtle/blob/master/docs/maintainers.md) directly.
 
