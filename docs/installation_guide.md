@@ -18,7 +18,7 @@ $ oo-diagnostics
 ```
 
 ## Install OpenShift v3
-***TODO***
+We have documented the [installation of OpenShift v3 here](http://blog.zhaw.ch/icclab/installing-openshift-origin-v3-on-openstack/).
 
 ## Install Cloud Controller
 ```
