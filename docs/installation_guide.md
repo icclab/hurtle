@@ -1,4 +1,11 @@
 #TODO
+# Pre-requirements 
+
+* OpenStack
+* OpenShift v2 or v3
+
+You can use any version of OpenStack, however *we recommend OpenStack kilo or above*. Reason for this is that heat includes the means to reconfigure a VM at runtime.
+You can choose to install either OpenShift v2 or v3, however *we recommend installing v3*. The reason for this is the performance of v3 is better than that of v2.
 
 ## Install OpenShift v2
 
