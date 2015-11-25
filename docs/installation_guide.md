@@ -2,10 +2,12 @@
 # Pre-requirements 
 
 * OpenStack
+  * You can use any version of OpenStack, however *we recommend OpenStack kilo or above*. Reason for this is that heat includes the means to reconfigure a VM at runtime.
 * OpenShift v2 or v3
+  * You can choose to install either OpenShift v2 or v3, however *we recommend installing v3*. The reason for this is the performance of v3 is better than that of v2.
 
-You can use any version of OpenStack, however *we recommend OpenStack kilo or above*. Reason for this is that heat includes the means to reconfigure a VM at runtime.
-You can choose to install either OpenShift v2 or v3, however *we recommend installing v3*. The reason for this is the performance of v3 is better than that of v2.
+# Install OpenStack
+A full guide to installing OpenStack is beyond this guide. However, the use of [Redhat's packstack](https://openstack.redhat.com/Quickstart) is often used by us to quickly install either an OpenStack cluster or all-in-one local installation in a VM.
 
 ## Install OpenShift v2
 
@@ -24,10 +26,10 @@ $ reboot
 $ oo-diagnostics
 ```
 
-## Install OpenShift v3
+# Install OpenShift v3
 We have documented the [installation of OpenShift v3 here](http://blog.zhaw.ch/icclab/installing-openshift-origin-v3-on-openstack/).
 
-## Install Cloud Controller
+# Install Cloud Controller
 ```
 yum install -y python pip && pip install pyssf
 yum install -y python-pip && pip install pyssf
