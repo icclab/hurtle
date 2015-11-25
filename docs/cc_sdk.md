@@ -3,6 +3,12 @@
 ### Function
 The SDK is a library containing many helper functions for service orchestrators to create and manage their services. A main function of the SDK in the current implementation is to deploy Heat templates on an underlying infrastructure, but it also offers many more methods.
 
+### Local Installation
+
+The CC SDK is provided with a setup script.
+
+    python setup.py install
+  
 ### Helper methods
 Below is a short description of the main functions in each component of the CC SDK. Details on each method provided by these components are provided within the inline documentation.
 #### sdk.services
