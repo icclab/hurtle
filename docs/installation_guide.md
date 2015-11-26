@@ -30,10 +30,4 @@ $ oo-diagnostics
 We have documented the [installation of OpenShift v3 here](http://blog.zhaw.ch/icclab/installing-openshift-origin-v3-on-openstack/).
 
 # Install Cloud Controller
-```
-yum install -y python pip && pip install pyssf
-yum install -y python-pip && pip install pyssf
-lokkit -p 8888:tcp
-git clone https://github.com/icclab/hurtle_cc_api.git
-vi hurtle_cc_api/etc/defaults.cfg
-```
+The installation of the Cloud Controller is described [here](https://github.com/icclab/hurtle_cc_api/blob/master/README.md).
