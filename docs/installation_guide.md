@@ -37,4 +37,4 @@ The installation of a Serivce manager is described [here](https://github.com/icc
 # Develop a Serivce Orchestrator
 We recoommend you take a look at the sample Service Orchestrator first, it can be found [here](https://github.com/icclab/hurtle_sample_so).
 
-Nest, follow [those](https://github.com/icclab/hurtle/blob/master/docs/how_to_write_a_hurtle_service.md) steps to write your own Service Orchestrator.
+Next, follow [those](https://github.com/icclab/hurtle/blob/master/docs/how_to_write_a_hurtle_service.md) steps to write your own Service Orchestrator.
