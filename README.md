@@ -104,8 +104,10 @@ The easiest way to understand how hurtle works is through how its life cycle of 
 More details are in the [logical](https://github.com/icclab/hurtle/blob/master/docs/architecture.md) and [technical](https://github.com/icclab/hurtle/blob/master/docs/hurtle_technical_implementation.md) architecture documents.
 
 # Getting Started
+## Installation
+A complete installation guide can be found [here](https://github.com/icclab/hurtle/blob/master/docs/installation_guide.md)
 
-## Quickstart
+## Vagrant
 Note: The Vagrant boxes are quiet demanding (6GB and 2GB of RAM) on your System.
 
 The Vagrant boxes give you a complete environment to play around: OpenStack, OpenShift and the hurtle-sample-so are preinstalled.
