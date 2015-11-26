@@ -48,7 +48,7 @@ Options:
                         Path to the service manager configuration file.
 ```
 
-This shows how to run the service manager. To do so you need to supply a configuration file. To understand what [configuration parameters should be set in the service manager configuration file, please see here]()
+This shows how to run the service manager. To do so you need to supply a configuration file. To understand what [configuration parameters should be set in the service manager configuration file, please see here](https://github.com/icclab/hurtle_sm#configuration)
 
 Once you have your configuration file, simple execute the service manager:
 
