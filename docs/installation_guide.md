@@ -1,4 +1,3 @@
-#TODO
 # Pre-requirements 
 
 * OpenStack
@@ -31,3 +30,11 @@ We have documented the [installation of OpenShift v3 here](http://blog.zhaw.ch/i
 
 # Install Cloud Controller
 The installation of the Cloud Controller is described [here](https://github.com/icclab/hurtle_cc_api/blob/master/README.md).
+
+# Install a Service Manager
+The installation of a Serivce manager is described [here](https://github.com/icclab/hurtle_sm).
+
+# Develop a Serivce Orchestrator
+We recoommend you take a look at the sample Service Orchestrator first, it can be found [here](https://github.com/icclab/hurtle_sample_so).
+
+Nest, follow [those](https://github.com/icclab/hurtle/blob/master/docs/how_to_write_a_hurtle_service.md) steps to write your own Service Orchestrator.
