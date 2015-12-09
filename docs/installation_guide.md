@@ -10,6 +10,8 @@ A full guide to installing OpenStack is beyond this guide. However, the use of [
 
 ## Install OpenShift v2
 
+Note that OpenShift v2 is now deprecated and will in future releases be removed.
+
 ```
 wget https://install.openshift.com/portable/oo-install-origin-m4.tgz
 tar zxvf oo-install-origin-m4.tgz
