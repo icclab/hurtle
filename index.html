@@ -73,34 +73,44 @@
 <h2>
 <a id="where-from" class="anchor" href="#where-from" aria-hidden="true"><span class="octicon octicon-link"></span></a>Where From?</h2>
 
-<p>hurtle has two origins:</p>
+<p>hurtle has two origins in:</p>
 
 <ol>
-<li>is the ICCLab's <a href="http://blog.zhaw.ch/icclab/category/research-approach/themes/cloud-orchestration/">Cloud Orchestration Initiative</a>
+<li>the ICCLab's <a href="http://blog.zhaw.ch/icclab/category/research-approach/themes/cloud-orchestration/">Cloud Orchestration Initiative</a>
 </li>
-<li>is in the telcom world and in particular <a href="https://en.wikipedia.org/wiki/Network_functions_virtualization">Network Function Virtualisation</a> (NFV). Here hurtle has been used to offer services that have been to date executed directly on or embedded in hardware.</li>
+<li>the telcom world and in particular <a href="https://en.wikipedia.org/wiki/Network_functions_virtualization">Network Function Virtualisation</a> (NFV). Here hurtle has been used to offer services that have been to date executed directly on or embedded in hardware.</li>
 </ol>
 
 <p>And well, it's all powered upon another hurtle ;-)</p>
+
+<h2>
+<a id="questions-that-hurtle-aims-to-address" class="anchor" href="#questions-that-hurtle-aims-to-address" aria-hidden="true"><span class="octicon octicon-link"></span></a>Questions that Hurtle Aims to Address</h2>
+
+<ul>
+<li>How to monetise your software?</li>
+<li>How to deliver your software as a service?</li>
+<li>How to compose existing services?</li>
+<li>How deliver and maintain reliability?</li>
+</ul>
 
 <h1>
 <a id="overview" class="anchor" href="#overview" aria-hidden="true"><span class="octicon octicon-link"></span></a>Overview</h1>
 
 <p>This repository provides documentation for hurtle and
 pointers to the other repositories that make up a complete hurtle system.
-See the <a href="./docs/reference.md">repository list</a>.</p>
+See the <a href="https://github.com/icclab/hurtle/blob/master/docs/reference.md">repository list</a>.</p>
 
 <p>hurtle consists of the following components:</p>
 
 <ul>
 <li>
-<a href="./docs/architecture.md">Service Manager (SM)</a>: receives requests for new tenant service instances -&gt; <a href="https://github.com/icclab/hurtle_sm">Code</a>
+<a href="https://github.com/icclab/hurtle/blob/master/docs/architecture.md">Service Manager (SM)</a>: receives requests for new tenant service instances → <a href="https://github.com/icclab/hurtle_sm">Code</a>
 </li>
 <li>
-<a href="./docs/architecture.md">Service Orchestrator (SO)</a>: manages the lifecycle of a tenant service instance -&gt; <a href="https://github.com/icclab/hurtle_sample_so">Sample code</a>
+<a href="https://github.com/icclab/hurtle/blob/master/docs/architecture.md">Service Orchestrator (SO)</a>: manages the lifecycle of a tenant service instance → <a href="https://github.com/icclab/hurtle_sample_so">Sample code</a>
 </li>
 <li>
-<a href="./docs/architecture.md">CloudController (CC)</a>: manages and abstracts underlying resources and SOs -&gt; <a href="https://github.com/icclab/hurtle_cc_api">Code</a>
+<a href="https://github.com/icclab/hurtle/blob/master/docs/architecture.md">CloudController (CC)</a>: manages and abstracts underlying resources and SOs → <a href="https://github.com/icclab/hurtle_cc_api">Code</a>
 </li>
 </ul>
 
@@ -108,13 +118,13 @@ See the <a href="./docs/reference.md">repository list</a>.</p>
 
 <ul>
 <li>
-<a href="./docs/architecture.md">hurtle's Architecture</a> for overall logical architecture.</li>
+<a href="https://github.com/icclab/hurtle/blob/master/docs/architecture.md">hurtle's Architecture</a> for overall logical architecture.</li>
 <li>
-<a href="./docs/hurtle_technical_implementation.md">hurtle's Technical Architecture</a> for details on the implementation of the support components.</li>
+<a href="https://github.com/icclab/hurtle/blob/master/docs/hurtle_technical_implementation.md">hurtle's Technical Architecture</a> for details on the implementation of the support components.</li>
 <li>
-<a href="./docs/how_to_write_a_hurtle_service.md">hurtle's How to write your Hurtle Service?</a> for details on the components necessary to create a hurtle manageable service. Note that a lot of information can also be found directly in the examples provided here!</li>
+<a href="https://github.com/icclab/hurtle/blob/master/docs/how_to_write_a_hurtle_service.md">hurtle's How to write your Hurtle Service?</a> for details on the components necessary to create a hurtle manageable service. Note that a lot of information can also be found directly in the examples provided here!</li>
 <li>
-<a href="./docs/reference.md">hurtle Reference &amp; Repolist</a> for an overview of each component.</li>
+<a href="https://github.com/icclab/hurtle/blob/master/docs/reference.md">hurtle Reference &amp; Repolist</a> for an overview of each component.</li>
 </ul>
 
 <h1>
@@ -188,13 +198,18 @@ See the <a href="./docs/reference.md">repository list</a>.</p>
 <strong>Disposal</strong>: Where a hurtle service instance is destroyed.</li>
 </ol>
 
-<p>More details are in the <a href="./docs/architecture.md">logical</a> and <a href="./docs/hurtle_technical_implementation.md">technical</a> architecture documents.</p>
+<p>More details are in the <a href="https://github.com/icclab/hurtle/blob/master/docs/architecture.md">logical</a> and <a href="https://github.com/icclab/hurtle/blob/master/docs/hurtle_technical_implementation.md">technical</a> architecture documents.</p>
 
 <h1>
 <a id="getting-started" class="anchor" href="#getting-started" aria-hidden="true"><span class="octicon octicon-link"></span></a>Getting Started</h1>
 
 <h2>
-<a id="quickstart" class="anchor" href="#quickstart" aria-hidden="true"><span class="octicon octicon-link"></span></a>Quickstart</h2>
+<a id="installation" class="anchor" href="#installation" aria-hidden="true"><span class="octicon octicon-link"></span></a>Installation</h2>
+
+<p>A complete installation guide can be found <a href="https://github.com/icclab/hurtle/blob/master/docs/installation_guide.md">here</a></p>
+
+<h2>
+<a id="vagrant" class="anchor" href="#vagrant" aria-hidden="true"><span class="octicon octicon-link"></span></a>Vagrant</h2>
 
 <p>Note: The Vagrant boxes are quiet demanding (6GB and 2GB of RAM) on your System.</p>
 
@@ -256,12 +271,12 @@ Twitter for updates and of course <a href="http://blog.zhaw.ch/icclab/tag/hurtle
 <p>To report bugs or request features, submit issues <a href="https://github.com/icclab/hurtle/issues">here on
 GitHub</a>..
 If you're contributing code, make pull requests to the appropriate
-repositories (see <a href="./docs/reference.md">the repo overview</a>).
+repositories (see <a href="https://github.com/icclab/hurtle/blob/master/docs/reference.md">the repo overview</a>).
 If you're contributing something substantial, you should first contact
 developers on the <a href="mailto:icclab-hurtle@dornbirn.zhaw.ch">hurtle-discuss mailing list</a>
-(<a href="https://mailman.engineering.zhaw.ch/mailman/listinfo/icclab-hurtle">subscribe</a>.</p>
+(<a href="https://mailman.engineering.zhaw.ch/mailman/listinfo/icclab-hurtle">subscribe</a>).</p>
 
-<p>For urgent questions please contact the <a href="./docs/maintainers.md">maintainers</a> directly.</p>
+<p>For urgent questions please contact the <a href="https://github.com/icclab/hurtle/blob/master/docs/maintainers.md">maintainers</a> directly.</p>
 
 <p>Hurtle repositories follow no written Guidelines to date.</p>
 
