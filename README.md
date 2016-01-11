@@ -15,6 +15,7 @@ Q: What is your motto?
 
 > A: "Confusing name, simple orchestration".
 
+[![Gitter](https://badges.gitter.im/icclab/hurtle.svg)](https://gitter.im/icclab/hurtle?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 
 # Why hurtle?
 
@@ -143,6 +144,8 @@ Hurtling along soon:
  - Additional external service endpoint protocol support
 
 # Community & Support
+
+[![Gitter](https://badges.gitter.im/icclab/hurtle.svg)](https://gitter.im/icclab/hurtle?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 
 Report bugs and request features using [GitHub Issues](https://github.com/icclab/hurtle/issues). For additional resources, you can contact the maintainers directly. Community discussion about turtle happens in one main place:
 
