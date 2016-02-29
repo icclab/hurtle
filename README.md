@@ -59,6 +59,7 @@ hurtle consists of the following components:
 - [Service Manager (SM)](https://github.com/icclab/hurtle/blob/master/docs/architecture.md): receives requests for new tenant service instances → [Code](https://github.com/icclab/hurtle_sm)
 - [Service Orchestrator (SO)](https://github.com/icclab/hurtle/blob/master/docs/architecture.md): manages the lifecycle of a tenant service instance → [Sample code](https://github.com/icclab/hurtle_sample_so)
 - [CloudController (CC)](https://github.com/icclab/hurtle/blob/master/docs/architecture.md): manages and abstracts underlying resources and SOs → [Code](https://github.com/icclab/hurtle_cc_api)
+- [Cloud Controller SDK](https://github.com/icclab/hurtle_cc_sdk)L provides an easy interface to the facilities of the CC.
 
 For more details, see:
 
