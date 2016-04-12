@@ -6,6 +6,8 @@
 
 # hurtle?
 
+[![Join the chat at https://gitter.im/icclab/hurtle](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/icclab/hurtle?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 
 Q: Why is it Called hurtle?
 
